@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Lawrence</title>
+
+	<!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+  <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/animate.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/owl.carousel.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/owl.theme.default.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/normalize.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/slicknav.min.css')}}" rel="stylesheet" type="text/css"/>
+
+	<!-- Site CSS -->
+
+  <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet" type="text/css"/>
+
+  <!-- Modernizr JS -->
+  <script src="{{url_for('static',filename='js/modernizr-3.5.0.min.js')}}"></script>
+
+	<!--favicon-->
+	<link rel="icon" type="image/png" sizes="936x936"  href="{{url_for('static',filename='images/favicon.png')}}">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+<body>
+	<div class="spinner-cover">
+		<div class="spinner-inner">
+			<div class="spinner">
+			  <div class="rect1"></div>
+			  <div class="rect2"></div>
+			  <div class="rect3"></div>
+			  <div class="rect4"></div>
+			  <div class="rect5"></div>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
+			<div class="sidebar-inner">
+				<div class="off-canvas-close"><span>CLOSE</span></div>
+				<div class="sidebar-widget">
+					<div class="widget-title-cover">
+						<h4 class="widget-title"><span>Popular Articles</span></h4>
+					</div>
+					<ul class="menu" id="sidebar-menu">
+
+						<li class="menu-item menu-item-has-children"><a href="#">About</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Charter</a></li>
+                <li class="menu-item"><a href="#">Masthead</a></li>
+							</ul>
+						</li>
+            <li class="menu-item menu-item-has-children"><a href="#">Miscellaneous</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Random Article Generator</a></li>
+							</ul>
+						</li>
+            <li class="menu-item"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="sidebar-widget">
+					<div class="widget-title-cover"><h4 class="widget-title"><span>Trending</span></h4></div>
+					<div class="latest_style_2">
+						<div class="latest_style_2_item_first">
+							<figure class="alith_post_thumb_big">
+								<span class="post_meta_categories_label">Legal, Blog</span>
+								<a href="single.html"><img src="{{url_for('static',filename='images/thumb-large.jpg')}}" alt=""/></a>
+							</figure>
+							<h3 class="alith_post_title">
+								<a href="single.html"><strong>Nor again is there anyone who loves or pursues or desires to obtain</strong></a>
+							</h3>
+						</div>
+						<div class="latest_style_2_item">
+							<figure class="alith_news_img"><a href="/single"><img src="{{url_for('static',filename='images/thumb-square-1.png')}}" alt=""/></a></figure>
+							<h3 class="alith_post_title"><a href="/single">Magna aliqua ut enim ad minim veniam</a></h3>
+							<div class="post_meta">
+								<span class="meta_date">18 Sep, 2018</span>
+							</div>
+						</div>
+						<div class="latest_style_2_item">
+							<figure class="alith_news_img"><a href="/single"><img src="{{url_for('static',filename='images/thumb-square-2.png')}}" alt=""/></a></figure>
+							<h3 class="alith_post_title"><a href="/single">Magna aliqua ut enim ad minim veniam</a></h3>
+							<div class="post_meta">
+								<span class="meta_date">18 Sep, 2018</span>
+							</div>
+						</div>
+						<div class="latest_style_2_item">
+							<figure class="alith_news_img"><a href="/single"><img src="{{url_for('static',filename='images/thumb-square-3.png')}}" alt=""/></a></figure>
+							<h3 class="alith_post_title"><a href="/single">Magna aliqua ut enim ad minim veniam</a></h3>
+							<div class="post_meta">
+								<span class="meta_date">18 Sep, 2018</span>
+							</div>
+						</div>
+					</div>
+				</div> <!--.sidebar-widget-->
+
+				<div class="sidebar-widget">
+					<div class="widget-title-cover"><h4 class="widget-title"><span>Advertise</span></h4></div>
+					<div class="banner-adv">
+						<div class="adv-thumb">
+							<a href="#">
+								<img class="aligncenter" alt="img1" src="{{url_for('static',filename='images/ads.jpg')}}">
+							</a>
+						</div>
+					</div>
+				</div> <!--.sidebar-widget-->
+			</div>
+        </div>		<!--#sidebar-wrapper-->
+
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="top_bar margin-15">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 time">
+								<div class="off-canvas-toggle" id="off-canvas-toggle"><span></span><p class="sidebar-open">MORE</p></div>
+								<!-- DATE GOES HERE | REFER TO DATE.HTML TO FIGURE OUT HTML TAGGING & REPLACE W/FLASK -->
+							</div>
+							<div class="col-md-6 col-sm-12 social">
+								<ul>
+									<li><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+								<div class="top-search">
+									<i class="fa fa-search"></i><span>SEARCH</span>
+								</div>
+								<div class="top-search-form">
+									<form action="#" class="search-form" method="get" role="search">
+										<label>
+											<span class="screen-reader-text">Search for:</span>
+											<input type="search" name="s" value="" placeholder="Search …" class="search-field">
+										</label>
+										<input type="submit" value="Search" class="search-submit">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12 header">
+							<h1 class="logo"><a href="/">THE LAWRENCE</a></h1>
+              <!-- <a href="index.html"><img src="assets/images/thelawrencetext.png" width="600" height="400"></img></a>
+              <br><br> -->
+							<p class="tagline">NEWSPAPER / MAGAZINE / PUBLISHER</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-nav section_margin">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-12 main_nav_cover" id="nav">
+                <ul id="main-menu">
+                  <li class=""><a href="/news">News</a></li>
+                  <li class=""><a href="/editorial">Editorial</a></li>
+                  <li class=""><a href="/opinions">Opinions</a></li>
+                  <li class=""><a href="/features">Features</a></li>
+                  <li class=""><a href="/arts">Arts</a></li>
+                  <li class=""><a href="/sports">Sports</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% block content %}{% endblock %}
+</body>
+</html>
