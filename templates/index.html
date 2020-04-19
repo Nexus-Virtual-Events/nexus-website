@@ -11,7 +11,7 @@
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ohio.clbthemes.com\/demo2\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4"}};
 			/*! This file is auto-generated */
 			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script><script src="./NexusWebsite_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		</script><script src="{{ url_for('static', filename='wp-emoji-release.min.js') }}" type="text/javascript" defer=""></script>
 		<style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -26,11 +26,11 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel="stylesheet" id="wphb-critical-css-css" href="./NexusWebsite_files/critical.css" type="text/css" media="all">
-<link rel="stylesheet" id="wp-block-library-css" href="./NexusWebsite_files/style.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="wp-block-library-theme-css" href="./NexusWebsite_files/theme.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="./NexusWebsite_files/37de6cc0310dd0529bd252b0f389134c.css" type="text/css" media="all">
-<link rel="stylesheet" id="rs-plugin-settings-css" href="./NexusWebsite_files/rs6.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wphb-critical-css-css" href="{{ url_for('static', filename='critical.css') }}"type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="{{ url_for('static', filename='style.min.css') }}"type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="{{ url_for('static', filename='heme.min.css') }}" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="{{ url_for('static', filename='37de6cc0310dd0529bd252b0f389134c.css') }}" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href= "{{ url_for('static', filename='rs6.css') }}" type="text/css" media="all">
 <style id="rs-plugin-settings-inline-css" type="text/css">
 #rs-demo-id {}
 .font-titles {
@@ -52,17 +52,17 @@ img.emoji {
 .srev-tab .rs-parallax-wrap:nth-last-child(2) {
 	float: left !important;
 }</style>
-<link rel="stylesheet" id="parent-style-css" href="./NexusWebsite_files/a1679bdf3ae7a9fc8ac0f7e3af19a40e.css" type="text/css" media="all">
-<link rel="stylesheet" id="ohio-style-css" href="./NexusWebsite_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href= "{{ url_for('static', filename='a1679bdf3ae7a9fc8ac0f7e3af19a40e.css') }}"  type="text/css" media="all">
+<link rel="stylesheet" id="ohio-style-css" href= "{{ url_for('static', filename='style.css') }}" type="text/css" media="all">
 <style id="ohio-style-inline-css" type="text/css">
 .site-header{border:none;}.site-header.header-fixed{border-bottom-style:solid;}.btn-optional{background-color:#191f23;border-color:#191f23;}.clb-page-headline::after{background-color:transparent;}.clb-subscribe-img{background-image:url('https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-2/oh__img100-768x492.jpg');background-size:cover;background-position:center center;background-repeat:no-repeat;}.site-footer{background-color:#ffffff;color:#191f23;}.site-footer .widget,.site-footer .widgets *{color:#191f23;}.site-footer .widgets .widget-title{color:#191f23;}.site-footer .site-info{color:#191f23;}body{color:#191f23;}input,select,textarea,.accordion-box .buttons h5.title,.woocommerce div.product accordion-box.outline h5{}h1,h2,h3,h4,h5,h6,.box-count,.mini_cart_item-desc .font-titles,.woo-c_product .font-titles,.tabNav_link.active,.icon-box-headline,.fullscreen-nav .menu-link,.postNav_item_inner_heading{color:#191f23;}.countdown-box .box-time .box-count,.chart-box-pie-content{color:#191f23;}.countdown-box .box-time .box-count,.chart-box-pie-content{color:#191f23;}h1,h2,h3,h4,h5,h6,.box-count,.font-titles,.tabNav_link.active,.icon-box-headline,.fullscreen-nav .menu-link,.postNav_item_inner_heading,.btn,.button,a.button,.main-nav .nav-item,.heading .title,.socialbar.inline a,.vc_row .vc-bg-side-text,.counter-box-count{}.portfolio-item h4,.portfolio-item h4.title,.portfolio-item h4 a,.portfolio-item-2 h4,.portfolio-item-2 h4.title,.portfolio-item-2 h4 a,.woocommerce ul.products li.product a{color:#191f23;font-size:inherit;line-height:inherit;}.blog-item h3.title{color:#191f23;line-height:initial;}.blog-item h3.title a{font-size:initial;}.portfolio-item-2 h4{}p.subtitle,.subtitle-font,.heading .subtitle,a.category{color:rgba(25,31,35,0.8);}span.category > a,div.category > a{color:rgba(25,31,35,0.8);}.portfolio-item .subtitle-font,.woocommerce ul.products li.product .subtitle-font.category,.woocommerce ul.products li.product .subtitle-font.category > a{color:rgba(25,31,35,0.8);font-size:inherit;line-height:inherit;}.contact-form.classic input::-webkit-input-placeholder,.contact-form.classic textarea::-webkit-input-placeholder,input.classic::-webkit-input-placeholder,input.classic::-moz-placeholder{color:rgba(25,31,35,0.8);}.contact-form.classic input::-moz-placeholder,.contact-form.classic textarea::-moz-placeholder{color:rgba(25,31,35,0.8);}input.classic:-ms-input-placeholder,.contact-form.classic input:-ms-input-placeholder,.contact-form.classic textarea:-ms-input-placeholder{color:rgba(25,31,35,0.8);}.brand-color,.brand-color-i,.brand-color-hover-i:hover,.brand-color-hover:hover,.has-brand-color-color,.is-style-outline .has-brand-color-color,a:hover,.blog-grid:hover h3 a,.portfolio-item.grid-2:hover h4.title,.fullscreen-nav li a:hover,.socialbar.inline a:hover,.gallery .expand .ion:hover,.close .ion:hover,.accordionItem_title:hover,.tab .tabNav_link:hover,.widget .socialbar a:hover,.social-bar .socialbar a:hover,.share-bar .links a:hover,.widget_shopping_cart_content .buttons a.button:first-child:hover,span.page-numbers.current,a.page-numbers:hover,.main-nav .nav-item.active-main-item > .menu-link,.comment-content a,.page-headline .subtitle b:before,nav.pagination li .page-numbers.active,#mega-menu-wrap > ul .sub-menu > li > a:hover,#mega-menu-wrap > ul .sub-sub-menu > li > a:hover,#mega-menu-wrap > ul > .current-menu-ancestor > a,#mega-menu-wrap > ul .sub-menu:not(.sub-menu-wide) .current-menu-ancestor > a,#mega-menu-wrap > ul .current-menu-item > a,#fullscreen-mega-menu-wrap > ul .current-menu-ancestor > a,#fullscreen-mega-menu-wrap > ul .current-menu-item > a,.woocommerce .woo-my-nav li.is-active a,.portfolio-sorting li a.active,.team-member .socialbar a:hover,.widget_nav_menu .current-menu-item > a,.widget_pages .current-menu-item > a,.portfolio-item-fullscreen .portfolio-details-date:before,.btn.btn-link:hover,.blog-grid-content .category-holder:after,.clb-page-headline .post-meta-estimate:before,.comments-area .comment-date-and-time:after,.post .entry-content a:not(.wp-block-button__link),.project-page-content .date:before,.pagination li .btn.active,.pagination li .btn.current,.pagination li .page-numbers.active,.pagination li .page-numbers.current,.category-holder:after,.clb-hamburger-nav .menu .nav-item:hover > a.menu-link .ion,.clb-hamburger-nav .menu .nav-item .visible > a.menu-link .ion,.clb-hamburger-nav .menu .nav-item.active > a.menu-link .ion,.clb-hamburger-nav .menu .sub-nav-item:hover > a.menu-link .ion,.clb-hamburger-nav .menu .sub-nav-item .visible > a.menu-link .ion,.clb-hamburger-nav .menu .sub-nav-item.active > a.menu-link .ion{color:#fc2121;}.brand-border-color,.brand-border-color-hover,.has-brand-color-background-color,.is-style-outline .has-brand-color-color,.wp-block-button__link:hover,.custom-cursor .circle-cursor--outer,.btn-brand,.btn-brand:active,.btn-brand:focus,.btn:hover,.btn.btn-flat:hover,.btn.btn-flat:focus,.btn.btn-outline:hover,a.button:hover,button.button:hover{border-color:#fc2121;}.brand-bg-color,.brand-bg-color-after,.brand-bg-color-before,.brand-bg-color-hover,.brand-bg-color-i,.brand-bg-color-hover-i,.btn-brand:not(.btn-outline),.has-brand-color-background-color,a.brand-bg-color,.wp-block-button__link:hover,.widget_price_filter .ui-slider-range,.widget_price_filter .ui-slider-handle:after,.main-nav .nav-item:before,.main-nav .nav-item.current-menu-item:before,.widget_calendar caption,.tag:hover,.page-headline .tags .tag,.radio input:checked + .input:after,.menu-list-details .tag,.custom-cursor .circle-cursor--inner,.custom-cursor .circle-cursor--inner.cursor-link-hover,.btn-round:before,.btn:hover,button.button:not(.btn-link):hover,a.button:not(.btn-link):hover,.btn.btn-flat:hover,.btn.btn-flat:focus,.btn.btn-outline:hover,nav.pagination li .btn.active:hover{background-color:#fc2121;}h1, h2, h3, h4, h5, h6 {font-family: "Space Grotesk SemiBold", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}.clb__custom_parallax_section {overflow: visible !important;}@media (max-width: 1024px) {.vc_row.clb__custom_parallax_row {margin-left: 0px !important;}.clb__custom_parallax_row .wpb_column .vc_column-inner {margin-left: 0px !important;}}@media (max-width: 768px) {.ohio-recent-projects-sc .grid-item{padding-right: 0px !important;padding-left: 0px !important;}}@media screen and (max-width: 1440px) and (min-width: 1025px) {.page-container .rev_row_zone_top > .rs-parallax-wrap,.page-container .rev_row_zone_bottom > .rs-parallax-wrap {max-width: 1200px;width: 100% !important;left: 0 !important;margin: 0 auto;}} @media screen and (min-width:1025px){.main-nav .nav-item a {padding: 0 2.24vw;}} @media screen and (min-width:769px) and (max-width:1024px){} @media screen and (max-width:768px){}
 </style>
-<link rel="stylesheet" id="js_composer_front-css" href="./NexusWebsite_files/js_composer.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="sccss_style-css" href="./NexusWebsite_files/saved_resource" type="text/css" media="all">
-<script type="text/javascript" src="./NexusWebsite_files/jquery.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/rbtools.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/rs6.min.js"></script>
+<link rel="stylesheet" id="js_composer_front-css" href= "{{ url_for('static', filename='js_composer.min.css') }}" type="text/css" media="all">
+<link rel="stylesheet" id="sccss_style-css" href= "{{ url_for('static', filename='saved_resource') }}" type="text/css" media="all">
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery-migrate.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='rbtools.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='rs6.min.js') }}"></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ohio.clbthemes.com/demo2/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ohio.clbthemes.com/demo2/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 5.4">
@@ -965,7 +965,7 @@ in Fjords
 	<div class="wpb_single_image wpb_content_element vc_align_left">
 
 		<figure class="wpb_wrapper vc_figure">
-			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="700" height="768" src="./NexusWebsite_files/oh__img153.jpg" class="vc_single_image-img attachment-full" alt=""></div>
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="700" height="768" src= "./NexusWebsite_files/oh__img153.jpg" class="vc_single_image-img attachment-full" alt=""></div>
 		</figure>
 	</div>
 
@@ -2236,29 +2236,29 @@ Netherlands</div></li>
 			}
 		}
 		</script>
-<link rel="stylesheet" id="ionicons-css" href="./NexusWebsite_files/ionicons.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="fontawesome-font-css" href="./NexusWebsite_files/fontawesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ionicons-css" href="{{ url_for('static', filename='ionicons.min.css') }}" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-font-css" href="{{ url_for('static', filename='fontawesome.min.css') }}" type="text/css" media="all">
 <script type="text/javascript">
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/ohio.clbthemes.com\/demo2\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="./NexusWebsite_files/scripts.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/wp-embed.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/js_composer_front.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/skrollr.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/imagesloaded.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/masonry.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/jquery.masonry.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/jquery.clb-slider.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/jquery.mega-menu.min.js"></script>
-<script type="text/javascript" src="./NexusWebsite_files/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='wp-embed.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js_composer_front.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='skrollr.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='imagesloaded.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='masonry.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.masonry.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.clb-slider.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.mega-menu.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='isotope.pkgd.min.js') }}"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
 var ohioVariables = {"url":"https:\/\/ohio.clbthemes.com\/demo2\/wp-admin\/admin-ajax.php","view_cart":"View Cart","add_to_cart_message":"has been added to the cart","subscribe_popup_enable":"1","subscribe_popup_type":"time","subscribe_popup_var":"5","notification_enable":"1","notification_expires":"1"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="./NexusWebsite_files/main.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
 <script type="text/javascript">
 document.tidioChatCode = "mnyb5ewvl1osjuly79vgor0ks4tusv10";
 (function() {
@@ -2282,4 +2282,4 @@ document.tidioChatCode = "mnyb5ewvl1osjuly79vgor0ks4tusv10";
 	<!-- Purchase button -->
 	<a target="_blank" class="purchase-theme btn vc_hidden-xs" href="https://1.envato.market/5Q25j"><i class="icon"><img src="./NexusWebsite_files/st__envato.svg" alt="envato icon"></i>Purchase</a>
 
-<script type="text/javascript" async="" src="./NexusWebsite_files/mnyb5ewvl1osjuly79vgor0ks4tusv10.js"></script><iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;" src="./NexusWebsite_files/saved_resource.html"></iframe><div id="tidio-chat"><iframe title="Tidio Chat" id="tidio-chat-iframe" style="display: block; border: none; position: fixed; width: 306px; height: 140px; max-height: 100vh; opacity: 1; left: auto; right: 0px; bottom: 0px; top: auto; background: none transparent; margin: 0px; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s; visibility: visible; z-index: 999999999 !important;" src="./NexusWebsite_files/saved_resource(1).html"></iframe></div></body></html>
+<script type="text/javascript" async="" src="{{ url_for('static', filename='mnyb5ewvl1osjuly79vgor0ks4tusv10.js') }}" ></script><iframe id="tidio-chat-code" title="Tidio Chat code" style="display: none;" src={{ url_for('static', filename='saved_resource.html') }}></iframe><div id="tidio-chat"><iframe title="Tidio Chat" id="tidio-chat-iframe" style="display: block; border: none; position: fixed; width: 306px; height: 140px; max-height: 100vh; opacity: 1; left: auto; right: 0px; bottom: 0px; top: auto; background: none transparent; margin: 0px; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s; visibility: visible; z-index: 999999999 !important;" src="./NexusWebsite_files/saved_resource(1).html"></iframe></div></body></html>
