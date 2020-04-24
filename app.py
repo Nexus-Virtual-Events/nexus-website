@@ -111,7 +111,7 @@ def authenticate_with_unity():
 		user = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]
 		data = request.json
 		if(user):
-			if(user["password"] = data["password"]):
+			if(user["password"] == data["password"]):
 				return 0
 			return 403
 		return 404
