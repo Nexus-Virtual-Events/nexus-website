@@ -23,6 +23,8 @@ oauth_scopes = [
 "https://www.googleapis.com/auth/userinfo.profile", #gets google email adress
 ]
 
+app.secret_key = os.environ['SECRET_KEY']
+
 def ran_gen(size, chars=string.ascii_uppercase + string.digits): 
     return ''.join(random.choice(chars) for x in range(size)) 
 
@@ -136,6 +138,5 @@ def logout():
     return redirect('/access')
 
 if __name__ == "__main__":
-	app.secret_key = os.environ['SECRET_KEY']
 	app.config['SESSION_TYPE'] = 'filesystem'
 	app.run()
