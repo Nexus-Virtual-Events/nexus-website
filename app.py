@@ -23,7 +23,13 @@ oauth_scopes = [
 "https://www.googleapis.com/auth/userinfo.profile", #gets google email adress
 ]
 
-app.secret_key = os.environ['SECRET_KEY']
+
+admins=[
+	"acanberk21@lawrenceville.org",
+	"ahasan20@lawrenceville.org",
+	"ekosoff@lawrenceville.org",
+	"tgachuega20@lawrenceville.org"
+]
 
 def ran_gen(size, chars=string.ascii_uppercase + string.digits): 
     return ''.join(random.choice(chars) for x in range(size)) 
@@ -47,6 +53,7 @@ users_ref = db.collection('users')
 
 
 app = Flask(__name__)
+app.secret_key = os.environ['SECRET_KEY']
 
 @app.route('/')
 def index():
@@ -95,6 +102,18 @@ def changepass():
 		user_id = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]["id"]
 		users_ref.document(user_id).update({'password':request.json["pass"]})
 		return redirect("/access")
+	else:
+		return "sneaky sneaky"
+
+@app.route('/login_with_unity', methods=['POST'])
+def changepass():
+	if(request.method == 'POST'):
+		user = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]
+		data = request.json
+
+		if(user):
+			users_ref.document(user["id"]).update({'password':request.json["pass"]})
+		return "Sorry, your account has not been created or you have entered the wrong email/password."
 	else:
 		return "sneaky sneaky"
 
