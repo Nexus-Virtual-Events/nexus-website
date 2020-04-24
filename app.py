@@ -105,15 +105,16 @@ def changepass():
 	else:
 		return "sneaky sneaky"
 
-@app.route('/login_with_unity', methods=['POST'])
-def changepass():
+@app.route('/authenticate_with_unity', methods=['POST'])
+def authenticate_with_unity():
 	if(request.method == 'POST'):
 		user = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]
 		data = request.json
-
 		if(user):
-			users_ref.document(user["id"]).update({'password':request.json["pass"]})
-		return "Sorry, your account has not been created or you have entered the wrong email/password."
+			if(user["password"] = data["password"]):
+				return 0
+			return 403
+		return 404
 	else:
 		return "sneaky sneaky"
 
