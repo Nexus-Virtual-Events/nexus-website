@@ -114,7 +114,7 @@ def authenticate_with_unity():
 		print("first line")
 		print(request.data)
 		data = json.loads(request.data.decode("utf-8"))
-		print(data after processing)
+		print("data after processin")
 		user = gtd(users_ref.where('email','==', data["email"]).get())
 		if(len(user)):
 			if(user["password"] == data["password"]):
