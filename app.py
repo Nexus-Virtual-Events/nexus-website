@@ -113,7 +113,7 @@ def authenticate_with_unity():
 	if(request.method == 'POST'):
 		print("first line")
 		print(request.data)
-		data = json.dumps(request.data.decode("utf-8"))
+		data = json.loads(request.data.decode("utf-8"))
 		print(data after processing)
 		user = gtd(users_ref.where('email','==', data["email"]).get())
 		if(len(user)):
