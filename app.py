@@ -108,13 +108,21 @@ def changepass():
 @app.route('/authenticate_with_unity', methods=['POST'])
 def authenticate_with_unity():
 	if(request.method == 'POST'):
-		user = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]
 		data = request.json
+		print(data);
+		user = gtd(users_ref.where('email','==', data["email"]).get())[0]
 		if(user):
 			if(user["password"] == data["password"]):
-				return 0
-			return 403
-		return 404
+				return {
+					"code":0,
+					"admin":(True if data["email"] in admins else False),
+				}
+			return {
+				"code":403
+			}
+		return {
+			"code":404
+		}
 	else:
 		return "sneaky sneaky"
 
