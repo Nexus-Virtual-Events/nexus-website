@@ -17,6 +17,8 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import random
 
+from flask_cors import CORS
+
 oauth_scopes = [
 "https://www.googleapis.com/auth/userinfo.email", #gets google profile
 "openid",
@@ -53,6 +55,7 @@ users_ref = db.collection('users')
 
 
 app = Flask(__name__)
+CORS(app)
 app.secret_key = os.environ['SECRET_KEY']
 
 @app.route('/')
