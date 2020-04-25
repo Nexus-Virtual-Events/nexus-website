@@ -108,6 +108,7 @@ def changepass():
 @app.route('/authenticate_with_unity', methods=['POST'])
 def authenticate_with_unity():
 	if(request.method == 'POST'):
+		print(request.data);
 		data = request.json
 		print(data);
 		user = gtd(users_ref.where('email','==', data["email"]).get())[0]
