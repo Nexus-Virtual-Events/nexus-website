@@ -111,11 +111,12 @@ def changepass():
 @app.route('/authenticate_with_unity', methods=['POST'])
 def authenticate_with_unity():
 	if(request.method == 'POST'):
+		print("first line")
 		print(request.data)
-		data = request.json
-		print(data);
-		user = gtd(users_ref.where('email','==', data["email"]).get())[0]
-		if(user):
+		data = json.dumps(request.data.decode("utf-8"))
+		print(data after processing)
+		user = gtd(users_ref.where('email','==', data["email"]).get())
+		if(len(user)):
 			if(user["password"] == data["password"]):
 				return {
 					"code":0,
