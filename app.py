@@ -17,6 +17,8 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import random
 
+from flask_cors import CORS
+
 oauth_scopes = [
 "https://www.googleapis.com/auth/userinfo.email", #gets google profile
 "openid",
@@ -53,6 +55,7 @@ users_ref = db.collection('users')
 
 
 app = Flask(__name__)
+CORS(app)
 app.secret_key = os.environ['SECRET_KEY']
 
 @app.route('/')
@@ -67,14 +70,15 @@ def access():
 	if("user_info" in flask.session.keys()):
 		print("user coming in")
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
-		password = gtd(user.get())[0]["password"]
 		if(len(gtd(user.get()))):
+			password = gtd(user.get())[0]["password"]
 			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
+	        'name': flask.session["user_info"]["name"]
 	    })
-		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
+		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
 	return render_template("access.html", logged_in = False)
 
 
@@ -105,25 +109,33 @@ def changepass():
 	else:
 		return "sneaky sneaky"
 
+
 @app.route('/authenticate_with_unity', methods=['POST'])
 def authenticate_with_unity():
 	if(request.method == 'POST'):
-		print(request.data);
-		data = request.json
-		print(data);
-		user = gtd(users_ref.where('email','==', data["email"]).get())[0]
-		if(user):
+	
+		print("second line")
+		print(request.form)
+		data = request.form
+		user = gtd(users_ref.where('email','==', data["email"]).get())
+		if(len(user) != 0):
+			user = user[0]
 			if(user["password"] == data["password"]):
-				return {
+				return json.dumps({
 					"code":0,
 					"admin":(True if data["email"] in admins else False),
-				}
-			return {
-				"code":403
-			}
-		return {
-			"code":404
-		}
+					"name":user["name"]
+				})
+			return json.dumps({
+				"code":403,
+				"admin":False,
+				"name":""
+			})
+		return json.dumps({
+			"code":404,
+			"admin":False,
+			"name":""
+		})
 	else:
 		return "sneaky sneaky"
 
