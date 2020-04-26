@@ -22984,15 +22984,15 @@ header.br_header.header-default.vertical-slide-portfolio {
       .header-default .header__wrapper .header-left .logo a img {
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 170px;
+        width: 340px;
         height: auto;
         max-width: 100%; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .header-default .header__wrapper .header-left .logo a img {
-            width: 140px !important; } }
+            width: 280px !important; } }
         @media only screen and (max-width: 767px) {
           .header-default .header__wrapper .header-left .logo a img {
-            width: 110px !important; } }
+            width: 220px !important; } }
     .header-default .header__wrapper .header-flex-right {
       display: -webkit-box;
       display: -webkit-flex;
