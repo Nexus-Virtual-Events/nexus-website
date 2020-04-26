@@ -22927,7 +22927,7 @@ header.br_header.header-default.vertical-slide-portfolio {
     width: 100%;
     z-index: 9999; }
     .header-default.header-transparent.position-from--top {
-      padding-top: 24px; }
+      padding-top: 12px; }
       .header-default.header-transparent.position-from--top.headroom--not-top {
         padding-top: 0; }
   .header-default .header__wrapper {
@@ -22982,8 +22982,8 @@ header.br_header.header-default.vertical-slide-portfolio {
           -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
       .header-default .header__wrapper .header-left .logo a img {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         width: 340px;
         height: auto;
         max-width: 100%; }
