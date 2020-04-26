@@ -2,7 +2,7 @@
 	Version: 1.0
 ======================*/
 /**************************************************************
-	
+
 	STYLESHEET INDEXING
 	|
 	|
@@ -45,12 +45,12 @@
 	|	|___ contagion
 	|	|___ player
 	|	|___ 404
-	|	
+	|
 	|
 	|
 	|___Components Styles
-	|	|___ video 
-	|	|___ breadcaump 
+	|	|___ video
+	|	|___ breadcaump
 	|	|___ instagram
 	|	|___ popup
 	|	|___ shopping-cart
@@ -72,8 +72,8 @@
 	|
 	|
 	|___Portfolio Styles
-	|	|___ portfolio-grid 
-	|	|___ portfolio-grid-metro 
+	|	|___ portfolio-grid
+	|	|___ portfolio-grid-metro
 	|	|___ portfolio-caption
 	|	|___ mesonry-button
 	|	|___ paralax
@@ -84,8 +84,8 @@
 	|
 	|
 	|___Blog Grid Styles
-	|	|___ blod-grid 
-	|	|___ pagination 
+	|	|___ blod-grid
+	|	|___ pagination
 	|	|___ blog-mesonry
 	|	|___ blog-grid-no-flex
 	|	|___ blog-grid-minimal
@@ -95,8 +95,8 @@
 	|
 	|
 	|___Shop Sidebar Styles
-	|	|___ shop-sidebar 
-	|	|___ single-product 
+	|	|___ shop-sidebar
+	|	|___ single-product
 	|	|___ cart
 	|	|___ checkout
 	|	|___ compare
@@ -133,8 +133,8 @@
 	|	|___ revulution
 	|	|___ presentation
 	|	|___ footer
-	|	 
-	|	
+	|
+	|
 	|	|___ Color Variation
 	|	|
 	|	|___ color-2
@@ -153,7 +153,7 @@
 .color-dark {
   color: #222222 !important; }
 
-/*================================================ 
+/*================================================
  font-family: 'Poppins', sans-serif;
  font-family: 'Permanent Marker', cursive;
  font-family: 'Playfair Display', serif;
@@ -700,7 +700,7 @@ Animation Css
     animation: moveHorizontal .65s ease forwards; }
 
 /* ------------------------
-    Custom Animation 01 
+    Custom Animation 01
 ----------------------------*/
 @-webkit-keyframes headerSlideDown {
   0% {
@@ -799,7 +799,7 @@ Animation Css
     opacity: 1; } }
 
 /* ------------------------
-    Brook Hover Effect 
+    Brook Hover Effect
 ---------------------------*/
 .brook-transition {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -831,7 +831,7 @@ Animation Css
     right: auto; }
 
 /* ------------------------
-    Separator Bounce 
+    Separator Bounce
 ---------------------------*/
 @-webkit-keyframes separator-bounce {
   0%,
@@ -857,7 +857,7 @@ Animation Css
  * Utilities
  */
 /* Font Family */
-/*================================================ 
+/*================================================
  font-family: 'Poppins', sans-serif;
  font-family: 'Permanent Marker', cursive;
  font-family: 'Playfair Display', serif;
@@ -866,7 +866,7 @@ Animation Css
  font-family: 'Roboto', sans-serif;
  font-family: 'Reenie Beanie', cursive;
  font-family: 'CerebriSans';
- 
+
  =================================================*/
 .hidden {
   display: none; }
@@ -998,13 +998,13 @@ Animation Css
   color: #AC61EE; }
 
 .secondary-font {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .primary-font {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .heading-font {
-  font-family: "louis_george_caferegular"; }
+  font-family: "Roboto"; }
 
 .playfair-font {
   font-family: "Playfair Display", serif; }
@@ -2219,7 +2219,7 @@ body.template-color-41 .text-color {
   color: #7F48B0; }
 
 /*-----------------------
-    Slick Gutter 
+    Slick Gutter
 ----------------------------*/
 .slick-gutter-5 {
   margin-left: -5px;
@@ -3959,7 +3959,7 @@ body.template-color-41 .text-color {
     padding-right: 15px !important; } }
 
 /*---------------------------
-Section Separation  
+Section Separation
 ----------------------------*/
 .bkseparator--5 {
   height: 5px; }
@@ -4873,7 +4873,7 @@ Section Separation
   padding: 350px 0; }
 
 /* =================================
-    Responsive Spacing Css 
+    Responsive Spacing Css
 ====================================*/
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .pb_lp--5 {
@@ -7316,7 +7316,7 @@ Section Separation
     margin-top: 100px; } }
 
 /*-----------------------
-Padding Top Bottom 
+Padding Top Bottom
 ----------------------------*/
 /* Section Padding Top Bottom */
 .section-ptb-xl {
@@ -7855,7 +7855,7 @@ textarea:-ms-input-placeholder {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
 
 /*--------------------------
-	Overlay styles 
+	Overlay styles
 ---------------------------*/
 [data-overlay],
 [data-black-overlay],
@@ -8010,7 +8010,7 @@ textarea:-ms-input-placeholder {
     color: #ffffff; }
 
 /*------------------------------
-    ScrollTo Up 
+    ScrollTo Up
 --------------------------------*/
 #scrollUp {
   width: 60px;
@@ -8613,7 +8613,7 @@ a.moredetails-btn {
       color: #fff; }
 
 /* ========================
-    Slider Video Play 
+    Slider Video Play
 =========================*/
 .yu2fvl {
   z-index: 9999;
@@ -8945,7 +8945,7 @@ a.moredetails-btn {
     background: #0038E3; }
 
 /*=====================================
-Creative Agency Section Title 
+Creative Agency Section Title
 =======================================*/
 .theme-creative {
   background-color: #FE378C;
@@ -9046,7 +9046,7 @@ Creative Agency Section Title
   margin-top: 30px; }
 
 /* ======================
-    Service Css 
+    Service Css
 =========================*/
 .service.service--1 {
   position: relative;
@@ -9407,10 +9407,10 @@ Creative Agency Section Title
   margin-bottom: 60px; }
 
 /* -------------------
-Counterup Area 
+Counterup Area
 ----------------------*/
 /* ---------------------------
-    Default Counter Area 
+    Default Counter Area
 -----------------------------*/
 .counter-fullwidth-grid {
   width: 100%;
@@ -9518,7 +9518,7 @@ Counterup Area
   background-position: center bottom 200px; }
 
 /* -------------------
-Counterup Area 
+Counterup Area
 ----------------------*/
 .number-speaks .content h3 {
   font-size: 14px;
@@ -9585,7 +9585,7 @@ Counterup Area
       color: #333; }
 
 /* ==========================
-    Conter Style 2 
+    Conter Style 2
 ===========================*/
 .counter-grid {
   -ms-grid-columns: (1fr)[3];
@@ -9632,7 +9632,7 @@ Counterup Area
     margin: 0; }
 
 /* =====================
-    Team Area 
+    Team Area
 ========================*/
 .team-heading .heading-left h3 {
   font-size: 14px;
@@ -10087,7 +10087,7 @@ Counterup Area
       background-size: 90%; } }
 
 /* =======================
-Wavify Area 
+Wavify Area
 ==============================*/
 .wavify-wrapper {
   position: absolute;
@@ -10103,7 +10103,7 @@ Wavify Area
   bottom: 0; }
 
 /* =======================
-Wavify Area 
+Wavify Area
 ==============================*/
 .wavify-wrapper {
   position: absolute;
@@ -10337,10 +10337,10 @@ Wavify Area
   display: none; }
 
 /*=======================
-Blog List Area 
+Blog List Area
 ===========================*/
 /* ---------------------------
-Blog Default Style 
+Blog Default Style
 -----------------------------*/
 .bg_image--4 {
   background-image: url(img/bg/bg-image-4.jpg);
@@ -10572,10 +10572,10 @@ Blog Default Style
     transform: scale(1.05); }
 
 /* ========================
-    Blog Style 2 
+    Blog Style 2
 ===========================*/
 /* ============================
-    Contact Area 
+    Contact Area
     http://prntscr.com/m3ajf8
 =================================*/
 .bg_image--23 {
@@ -10714,7 +10714,7 @@ Blog Default Style
       right: auto; }
 
 /* ========================
-Contact Form Style 01 
+Contact Form Style 01
 ============================*/
 .form-style--1 .input-box {
   position: relative;
@@ -11085,7 +11085,7 @@ Contact Form Style 01
   color: #001029; }
 
 /*==========================
-    About Area 
+    About Area
 ===========================*/
 .brook-about-area.bg-shape {
   background-image: url(img/slider/revolution/slider-5.png);
@@ -11240,7 +11240,7 @@ Contact Form Style 01
       margin-bottom: 15px; } }
 
 /* ========================
-    Call To Action Area 
+    Call To Action Area
 ============================*/
 .bg_image--9,
 .bg_image--10 {
@@ -11363,7 +11363,7 @@ Contact Form Style 01
       text-align: center; } }
 
 /*==========================
- Slick Arrow Style 
+ Slick Arrow Style
 =============================*/
 .slick-dotted.slick-slider {
   margin-bottom: 0; }
@@ -11710,7 +11710,7 @@ Contact Form Style 01
   visibility: visible; }
 
 /* =================================
-    Motivational Archive 
+    Motivational Archive
 =================================*/
 .bg_image--7 {
   background-size: contain;
@@ -11747,7 +11747,7 @@ Contact Form Style 01
     max-width: 100%; }
 
 /* ------------------------
-    Social Area 
+    Social Area
 ----------------------------*/
 .social-share.padding-10 a:first-child {
   padding-left: 0; }
@@ -12194,7 +12194,7 @@ a {
       transform: translateX(-50%) translateY(8px); }
 
 /* ===========================
-    Shot Note Css 
+    Shot Note Css
 ==============================*/
 .section-separator-with--border {
   border-top: 1px solid #eee;
@@ -12264,7 +12264,7 @@ a {
         background: #222222; }
 
 /* =========================
-    Flexable Image Area 
+    Flexable Image Area
 ===========================*/
 .flexale-image .thumb img {
   width: 100%; }
@@ -12398,7 +12398,7 @@ a {
         background: #ffffff; }
 
 /* =======================
-    Custom Carousel Area 
+    Custom Carousel Area
 ===========================*/
 /*-- Hero Item --*/
 .hero-item {
@@ -12899,7 +12899,7 @@ a {
   line-height: 1.67; }
 
 /*==============================
-Countdown Area 
+Countdown Area
 ====================================*/
 .countdown-style-1 .timer-grid > div {
   display: -webkit-box;
@@ -13020,7 +13020,7 @@ Countdown Area
     font-size: 15px !important; } }
 
 /* ==========================
-Progress Charts 
+Progress Charts
 ==============================*/
 .progress-wrapper h3.heading {
   font-size: 24px;
@@ -13104,7 +13104,7 @@ Progress Charts
       display: block; } }
 
 /* ====================
-    Gallery Area 
+    Gallery Area
 ========================*/
 .gallery-grid {
   display: -ms-grid;
@@ -13213,7 +13213,7 @@ Progress Charts
   margin-top: 30px; }
 
 /*=========================
-    Minimal Gallery 
+    Minimal Gallery
 ==========================*/
 .minimal-gallery.masonry-wrap {
   margin: 0 -45px; }
@@ -13244,7 +13244,7 @@ Progress Charts
         margin-top: 30px; } }
 
 /* ==========================
-    Gradation Area 
+    Gradation Area
 ============================*/
 .bk-gradation {
   display: -webkit-box;
@@ -13386,7 +13386,7 @@ Progress Charts
       background: #7ed321 !important; }
 
 /* =================
-    Typed Text 
+    Typed Text
 ======================*/
 .cd-headline.clip span {
   padding: 0; }
@@ -13426,7 +13426,7 @@ Progress Charts
         line-height: 28px; } }
 
 /* ============================
-    Political Area 
+    Political Area
     http://prntscr.com/m3ajf8
 =================================*/
 .margin-50 {
@@ -13476,7 +13476,7 @@ Progress Charts
   line-height: 30px; }
 
 /* ========================
-Pricing PLans 
+Pricing PLans
 ==========================*/
 .ht-pricing-list-view {
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
@@ -13587,7 +13587,7 @@ Pricing PLans
           padding: 30px 10px 40px; }
 
 /*======================
-    Career Area 
+    Career Area
 ==========================*/
 .brook-career-area {
   position: relative;
@@ -13609,7 +13609,7 @@ Pricing PLans
     border-bottom-style: solid !important; }
 
 /* ===========================
-    Maintanence Area 
+    Maintanence Area
 ==============================*/
 .maintanence-wrapper .inner h2 {
   font-size: 90px;
@@ -13785,7 +13785,7 @@ Pricing PLans
       width: 170px; }
 
 /*==============================
-Contagion Area 
+Contagion Area
 ====================================*/
 .single-contagion {
   display: -webkit-box;
@@ -14164,7 +14164,7 @@ Contagion Area
     transform: translateX(-8px); } }
 
 /* ----------------------
-Testimonial Area 
+Testimonial Area
 -------------------------*/
 .bk-testimonial-area {
   position: relative;
@@ -14783,7 +14783,7 @@ Testimonial Area
     padding-right: 0px !important; } }
 
 /*====================
- 404 Area 
+ 404 Area
  =====================*/
 .error-not-found {
   background: #000;
@@ -14804,7 +14804,7 @@ Testimonial Area
       margin: 0 auto; }
 
 /*================
-Tabs Area 
+Tabs Area
 ==================*/
 .tab,
 .scrollspy {
@@ -14851,7 +14851,7 @@ Tabs Area
     flex-direction: column !important; } }
 
 /*==========================
-    Player Area CSS 
+    Player Area CSS
 ===========================*/
 .plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded="true"] {
   background: #0069FF;
@@ -15034,7 +15034,7 @@ audio {
 	Components Style
 =================================*/
 /* ---------------------------
-    Video Area 
+    Video Area
 -----------------------------*/
 .comp-video.line--between,
 .comp-video .line--between {
@@ -15277,7 +15277,7 @@ audio {
   background: #FF5EE1 !important; }
 
 /* =========================
-Breadcaump Area 
+Breadcaump Area
 =============================*/
 .breadcaump-area.breadcaump-title-bar .breadcaump-inner .heading {
   font-weight: 600;
@@ -15361,7 +15361,7 @@ Breadcaump Area
       background-color: #ffffff; }
 
 /* =======================
-    Instagram Area 
+    Instagram Area
 ==========================*/
 /* Instagram Style 01 */
 .instagram-grid-wrap {
@@ -15441,7 +15441,7 @@ Breadcaump Area
       opacity: 1; }
 
 /* ==========================
-    Popup Style 
+    Popup Style
 =============================*/
 .brook-search-popup {
   position: fixed;
@@ -15583,7 +15583,7 @@ Breadcaump Area
     transform: none; }
 
 /* ===========================
-    Shopping Cart Area 
+    Shopping Cart Area
 ==============================*/
 .mini-cart {
   position: relative; }
@@ -15707,7 +15707,7 @@ Breadcaump Area
           transform: translateY(-3px); }
 
 /* ========================
-    Mega Menu 
+    Mega Menu
 ==========================*/
 .header-mega-menu .row,
 .header-mega-menu [class*="col-"] {
@@ -15730,7 +15730,7 @@ Breadcaump Area
       top: 100%; }
 
 /* -------------------------
-Start Dropdown Menu 
+Start Dropdown Menu
 --------------------------*/
 .dropdown__menu {
   -webkit-box-shadow: 0 10px 37px rgba(0, 0, 0, 0.07);
@@ -15891,7 +15891,7 @@ Start Dropdown Menu
         color: #ffffff; }
 
 /* ====================
-    Toolbar Area 
+    Toolbar Area
 ========================*/
 .brook__toolbar .inner {
   position: absolute;
@@ -15987,7 +15987,7 @@ Start Dropdown Menu
         transform: translateX(-8px); }
 
 /* ==========================
-Typography Area 
+Typography Area
 ===============================*/
 .brook-heading .spacing {
   height: 40px; }
@@ -16400,7 +16400,7 @@ p.bk_pra {
     font-style: normal; }
 
 /*==========================
-List Area 
+List Area
 ===========================*/
 .bk-list .list-header {
   padding-left: 36px; }
@@ -16503,7 +16503,7 @@ List Area
         font-family: "louis_george_caferegular"; }
 
 /* =====================
-Pricing Box 
+Pricing Box
 ========================*/
 .procing-wrap {
   margin-left: auto;
@@ -16672,7 +16672,7 @@ Pricing Box
         right: auto; }
 
 /* =====================
-    Icon Boxes 
+    Icon Boxes
 ========================*/
 .black-bg {
   background-color: #000000 !important; }
@@ -16788,7 +16788,7 @@ Pricing Box
   margin-bottom: 15px; }
 
 /* =====================
-    Icon Box Style 
+    Icon Box Style
 ========================*/
 .icon-grid-box {
   -ms-grid-columns: (1fr)[3];
@@ -17019,7 +17019,7 @@ Pricing Box
         visibility: visible; }
 
 /* ========================
-Dividers Area 
+Dividers Area
 ==========================*/
 .dividers-inner .space {
   height: 90px; }
@@ -17086,7 +17086,7 @@ Dividers Area
     box-shadow: 0 0 12px #ffffff; }
 
 /* =========================
-    Message Box Area 
+    Message Box Area
 ============================*/
 .message-box {
   position: relative;
@@ -17126,7 +17126,7 @@ Dividers Area
       color: #ffffff; }
 
 /*============================
-    Accordion Area 
+    Accordion Area
 ==============================*/
 .bk-accordion .card {
   border: 0 none;
@@ -17355,7 +17355,7 @@ Dividers Area
       line-height: 22px; } }
 
 /* =====================
-    Google Map Area 
+    Google Map Area
 ========================*/
 /*Google Map Area css*/
 #htmap {
@@ -17598,7 +17598,7 @@ Dividers Area
     opacity: 0; } }
 
 /*============================
-Row And Column 
+Row And Column
 ================================*/
 .vc_row-separator {
   position: absolute;
@@ -17729,7 +17729,7 @@ Row And Column
   position: relative; }
 
 /* =====================
-Info Boxes 
+Info Boxes
 =======================*/
 .bk-info-boxes {
   display: -ms-grid;
@@ -17796,7 +17796,7 @@ Info Boxes
       padding-bottom: 30px; } }
 
 /* ===================
-Pre Loader 
+Pre Loader
 ======================*/
 .page-loading {
   position: fixed;
@@ -17834,7 +17834,7 @@ body.loaded .page-loading {
   transition: all 1s; }
 
 /*========================
-    Demo Option 
+    Demo Option
 =========================*/
 .demo-option-container {
   position: fixed;
@@ -17886,7 +17886,7 @@ body.loaded .page-loading {
 	Portfolio Styles
 ===================================*/
 /* =============================
-    Portfolio Grid Area 
+    Portfolio Grid Area
 ==============================*/
 .portfolio {
   position: relative;
@@ -18155,7 +18155,7 @@ body.loaded .page-loading {
         transform: translateY(0); }
 
 /*=========================
-    Portfolio Grid Metro 
+    Portfolio Grid Metro
  ==========================*/
 /* Metro Grid Style 1 */
 .portfolio-grid-metro .portfolio-25 {
@@ -18406,7 +18406,7 @@ body.loaded .page-loading {
   display: none; }
 
 /* ------------------------------
-    Home Creative Potfolio 
+    Home Creative Potfolio
 --------------------------------*/
 .porfolio-swip-horizontal {
   width: auto;
@@ -18500,7 +18500,7 @@ body.loaded .page-loading {
         color: #000; }
 
 /* ======================
-    Metro Grid Style 8 
+    Metro Grid Style 8
 ==========================*/
 .portfolio-grid-metro8 {
   margin: 0 -50px; }
@@ -18554,7 +18554,7 @@ body.loaded .page-loading {
       width: 100%; } }
 
 /* =========================
-    Portfolio Caption 
+    Portfolio Caption
 ============================*/
 .portfolio.with-caption {
   background: #fff;
@@ -18642,7 +18642,7 @@ body.loaded .page-loading {
     height: auto; }
 
 /* ========================
-    Portfolio Caption 
+    Portfolio Caption
 ===========================*/
 .portfolio-cation {
   position: relative; }
@@ -18697,7 +18697,7 @@ body.loaded .page-loading {
     transform: translateY(0); }
 
 /* ==========================
-    Mesonry Button 
+    Mesonry Button
 =============================*/
 .messonry-button button {
   padding: 0;
@@ -18777,7 +18777,7 @@ body.loaded .page-loading {
     margin-left: 15px; }
 
 /* ==============================
-    Portfolio Button Style 2 
+    Portfolio Button Style 2
 ==================================*/
 .messonry-button--2 button {
   position: relative;
@@ -18811,7 +18811,7 @@ body.loaded .page-loading {
     color: #001029; }
 
 /* =========================
-    Paralax Area 
+    Paralax Area
 ============================*/
 .paralax-grid {
   display: -ms-grid;
@@ -18855,7 +18855,7 @@ body.loaded .page-loading {
       background: url("img/portfolio/grid/paralax-6.jpg"); }
 
 /* =========================
-Has Center 
+Has Center
 ===============================*/
 .has-center-content .has-centerinner .thumb img {
   width: auto;
@@ -18988,7 +18988,7 @@ Has Center
   right: 35px; }
 
 /*=================================
- Type Hover Portfolio Animation 
+ Type Hover Portfolio Animation
 ===================================*/
 .portfolio-type-hover {
   padding-top: 0 !important;
@@ -19132,7 +19132,7 @@ Has Center
           transform: scale(1); }
 
 /* ===============================
-    Portfolio Type Two 
+    Portfolio Type Two
 ==================================*/
 .portfolio-type2-container {
   padding-top: 0 !important;
@@ -19301,7 +19301,7 @@ Has Center
           transform: scale(1); }
 
 /* ===============================
-    Portfolio Type 3 
+    Portfolio Type 3
 ==================================*/
 .portfolio-type3-container {
   padding-top: 0 !important;
@@ -19462,7 +19462,7 @@ Has Center
       opacity: 1; }
 
 /* ========================
-Portfolio Details 
+Portfolio Details
 ===========================*/
 .bg_image--38 {
   background-image: url(img/bg/bg-image-38.jpg);
@@ -19499,7 +19499,7 @@ Portfolio Details
         color: #0038E3; }
 
 /*==========================
-Portfolio Nav Page 
+Portfolio Nav Page
 ============================*/
 .portfolio-nav-list {
   display: -webkit-box;
@@ -19573,7 +19573,7 @@ Portfolio Nav Page
 	Blog Grid Styles
 ======================================*/
 /* ===========================
-    Blog Grid Area 
+    Blog Grid Area
 =============================*/
 .blog-grid {
   position: relative;
@@ -19828,7 +19828,7 @@ Portfolio Nav Page
     overflow: visible;
     height: auto;
     /* -------------------
-            Yellow Color  
+            Yellow Color
             ---------------------*/ }
     .blog-grid--modern.blog-standard .post-thumb {
       overflow: hidden;
@@ -19906,7 +19906,7 @@ Portfolio Nav Page
       border-bottom: 1px solid #eee; }
 
 /*======================
- Blog Slide Button 
+ Blog Slide Button
 ========================*/
 .blog-slick-initial .slick-arrow {
   position: absolute;
@@ -19940,7 +19940,7 @@ Portfolio Nav Page
   width: 100%; }
 
 /* ==========================
-    Brook Pagination 
+    Brook Pagination
 =============================*/
 .brook-pagination-wrapper .brook-pagination {
   padding: 0;
@@ -19973,7 +19973,7 @@ Portfolio Nav Page
       color: #fff; }
 
 /*============================
-    Blog Metro Grid Style 3 
+    Blog Metro Grid Style 3
 =============================*/
 .bk-blog-masonry {
   margin: 0 -15px; }
@@ -20045,7 +20045,7 @@ Portfolio Nav Page
   width: 33.33%; }
 
 /* ==========================
-    Blog Grid No Flex 
+    Blog Grid No Flex
 =============================*/
 .blog-grid-no-flex {
   position: relative;
@@ -20140,7 +20140,7 @@ Portfolio Nav Page
   color: #ffffff !important; }
 
 /* =======================
-    Blog Grid Minimal 
+    Blog Grid Minimal
 ==========================*/
 .bk-blog-grid-area.bg-shape {
   background-image: url(img/slider/revolution/slider-3.png);
@@ -20322,7 +20322,7 @@ Portfolio Nav Page
     color: #0038E3; }
 
 /*=========================
-Blog Details 
+Blog Details
 ============================*/
 .blog-tag-list a {
   color: #999999;
@@ -20418,7 +20418,7 @@ Blog Details
       padding-left: 90px; }
 
 /* ========================
-Start Comment Area 
+Start Comment Area
 ==========================*/
 .blog-details-wrapper .audio-post iframe {
   min-height: 200px;
@@ -20476,7 +20476,7 @@ Start Comment Area
         padding-left: 0; } }
 
 /* ====================
-    Contact Form 
+    Contact Form
 ======================*/
 .comment-form-wrapper .contact-form input {
   height: 50px; }
@@ -20485,7 +20485,7 @@ Start Comment Area
   height: 180px; }
 
 /* ====================
-Blog Main Quote 
+Blog Main Quote
 ======================*/
 .blog-main-quote {
   position: relative;
@@ -20493,7 +20493,7 @@ Blog Main Quote
   text-align: center; }
 
 /*===================================
- Post Return Button 
+ Post Return Button
  ==================================*/
 .blog-post-return-button a {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -20527,7 +20527,7 @@ Blog Main Quote
   width: 100%; }
 
 /* ========================
-    Blog Sidebar 
+    Blog Sidebar
 ===========================*/
 .blog-sidebar-wrapper {
   border: 1px solid #eee;
@@ -20675,7 +20675,7 @@ Blog Main Quote
 	Shop Sidebar Styles
 =====================================*/
 /*=====================
-Shop Sidebar 
+Shop Sidebar
 =======================*/
 .archive-shop-inner select {
   height: 50px;
@@ -22295,8 +22295,8 @@ Shop Sidebar
       .panel-body .entries-wrapper .entries-edit-delete {
         margin-bottom: 24px; } }
 
-/* -------------------------------- 
-Main Components 
+/* --------------------------------
+Main Components
 -------------------------------- */
 .gradient-wrapper {
   margin: 150px;
@@ -22514,9 +22514,9 @@ a {
   color: #267481;
   text-decoration: none; }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 @media only screen and (min-width: 1050px) {
@@ -22765,7 +22765,7 @@ Main Components
   align-items: center; }
 
 /* ============================
-    Header Default Area 
+    Header Default Area
 ================================*/
 /* Maninmenu Area */
 .mainmenu-wrapper .page_nav ul.mainmenu {
@@ -23135,7 +23135,7 @@ header.br_header.header-default.vertical-slide-portfolio {
   background: #222; }
 
 /* ==========================
-    Header left Align 
+    Header left Align
 ===========================*/
 .header-left--align.header-default .header__wrapper .header-left .logo a img {
   width: auto !important; }
@@ -23177,7 +23177,7 @@ header.br_header.header-default.vertical-slide-portfolio {
   padding-right: 8px; }
 
 /* ============================
-    Sticky Header Css 
+    Sticky Header Css
 ================================*/
 .black-logo--version.headroom--sticky.headroom--not-top {
   background: rgba(255, 255, 255, 0.9);
@@ -23226,7 +23226,7 @@ header.br_header.header-default.vertical-slide-portfolio {
   padding: 16px 0; }
 
 /* =================================
-    Header One Page 
+    Header One Page
 ==================================*/
 .one-page-header .header-wrapper {
   display: -webkit-box;
@@ -23325,7 +23325,7 @@ header.br_header.header-default.vertical-slide-portfolio {
       height: 100%; }
 
 /*==========================
-Hambergar Style Two 
+Hambergar Style Two
 ============================*/
 .manu-hamber-2 {
   padding: 0 12px;
@@ -23391,7 +23391,7 @@ Hambergar Style Two
   flex-basis: 50%; }
 
 /*=================================
-    Header Fixed 
+    Header Fixed
 =====================================*/
 header.br_header.header-default.header-fixed {
   position: fixed;
@@ -23400,7 +23400,7 @@ header.br_header.header-default.header-fixed {
   top: 0; }
 
 /* =====================
-    Mobile Menu 
+    Mobile Menu
 ========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mean-container .mean-bar {
@@ -23437,7 +23437,7 @@ header.br_header.header-default.header-fixed {
     margin-right: 68px; } }
 
 /* ==========================
-    Sidebar Header 
+    Sidebar Header
 =============================*/
 .br_header-sidebar {
   position: fixed;
@@ -23717,7 +23717,7 @@ header.br_header.header-default.header-fixed {
     transform: scale3d(1.1, 1.1, 1.1); }
 
 /* =====================
-    Feature Area 
+    Feature Area
 ========================*/
 .bk-feature .icon {
   margin-right: 20px; }
@@ -23725,7 +23725,7 @@ header.br_header.header-default.header-fixed {
     font-size: 40px; }
 
 /* =======================
-    Start Up Service 
+    Start Up Service
 ==========================*/
 .startupservice-wrapper {
   padding: 150px 100px 150px 316px; }
@@ -23782,7 +23782,7 @@ header.br_header.header-default.header-fixed {
     color: #0069FF; }
 
 /* ======================
-Freelancer Area 
+Freelancer Area
 ==========================*/
 .freelancer-wrapper {
   padding-top: 59px;
@@ -23825,7 +23825,7 @@ Freelancer Area
         float: left; } }
 
 /* ======================
-    Hamber Menu 
+    Hamber Menu
 =========================*/
 .manu-hamber {
   display: -webkit-box;
@@ -24027,7 +24027,7 @@ Freelancer Area
     font-size: 20px; } }
 
 /*======================================
-    Left Vertical Header 
+    Left Vertical Header
 ======================================*/
 .vertical-menu-wrapper .mainmenu-wrapper .page_nav ul.mainmenu {
   padding: 0;
@@ -24068,7 +24068,7 @@ Freelancer Area
   left: 100%; }
 
 /* =======================
-Header Font Family 
+Header Font Family
 ==========================*/
 .secondary-font .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1 > a {
   font-family: "Montserrat", sans-serif; }
@@ -24077,7 +24077,7 @@ Header Font Family
   font-family: "Montserrat", sans-serif; }
 
 /* ======================
-    Footer Area 
+    Footer Area
 ========================*/
 .bk_left-vertical-header {
   position: fixed;
@@ -24226,7 +24226,7 @@ Header Font Family
             margin-left: 30px; } }
 
 /* ========================
-    Fullscreen Slider 
+    Fullscreen Slider
 ===========================*/
 .left-vertical-header {
   margin-left: 310px; }
@@ -24339,7 +24339,7 @@ Header Font Family
     content: ""; } }
 
 /* ==========================
-    Sidebar Mobile Menu 
+    Sidebar Mobile Menu
 ==============================*/
 .popup-mobile-menu-wrapper .popup-mobile-manu {
   visibility: visible;
@@ -24441,7 +24441,7 @@ Header Font Family
           transform: none; }
 
 /* =======================
-    Header menu 
+    Header menu
 ==========================*/
 .object-custom-menu {
   padding: 0;
@@ -24506,7 +24506,7 @@ Header Font Family
           color: #999999; }
 
 /* ========================
-    Header Broadsheets 
+    Header Broadsheets
 ==========================*/
 .header__digital--broadcast {
   display: -webkit-box;
@@ -24588,7 +24588,7 @@ Header Font Family
   padding-bottom: 25px; }
 
 /*======================
-Button Hire  
+Button Hire
 ========================*/
 .hire-on-top-button {
   position: relative; }
@@ -24711,7 +24711,7 @@ Button Hire
     transform: translateX(88px); }
 
 /* ========================
-    One pge Contact 
+    One pge Contact
 ==========================*/
 .onepage-contact-inner {
   -webkit-box-sizing: border-box;
@@ -24781,7 +24781,7 @@ Button Hire
       margin-bottom: 30px; } }
 
 /* =========================
-    Foodie Css 
+    Foodie Css
 ============================*/
 .foodie-slider {
   min-height: 690px;
@@ -24809,7 +24809,7 @@ Button Hire
     background-size: cover; }
 
 /*=========================
-    Portfolio Slide 
+    Portfolio Slide
 ============================*/
 .single-portfolio-slide {
   position: relative; }
@@ -24939,7 +24939,7 @@ Button Hire
           font-size: 40px; } }
 
 /*==============================
-Vertical Slider Area 
+Vertical Slider Area
 =================================*/
 .vertical-bg-1 {
   background-image: url(img/slider/vertical-slide/vertical-slide-1.jpg);
@@ -25046,7 +25046,7 @@ Vertical Slider Area
     color: #fff; }
 
 /*===============================
-Creative People Area 
+Creative People Area
 =====================================*/
 .creative-people-inner h2.heading {
   display: inline-block;
@@ -25062,7 +25062,7 @@ Creative People Area
       font-size: 32px; } }
 
 /* ========================
-Indie Musician Area 
+Indie Musician Area
 ============================*/
 .bg_image--52 {
   background-attachment: fixed; }
@@ -25130,7 +25130,7 @@ Indie Musician Area
     flex-grow: 1; }
 
 /* ==============================
-Vertical Slider Portfolio 
+Vertical Slider Portfolio
 =================================*/
 #fp-nav ul {
   position: fixed !important;
@@ -25193,7 +25193,7 @@ Vertical Slider Portfolio
   padding-top: 24px; }
 
 /*================================
- Fullscreen Slider Wrapper 
+ Fullscreen Slider Wrapper
  =================================*/
 .fullscreen-slider-wrapper {
   height: 100%; }
@@ -25307,7 +25307,7 @@ Vertical Slider Portfolio
     padding: 10px 0; } }
 
 /* =========================
-Shop Slide Area 
+Shop Slide Area
 =============================*/
 .shop-slide-bg-1 {
   width: 50%;
@@ -25398,7 +25398,7 @@ Shop Slide Area
           max-width: 470px; }
 
 /*==========================
-    Product Area 
+    Product Area
 ============================*/
 .product-tab {
   margin-top: 30px; }
@@ -25766,7 +25766,7 @@ Shop Slide Area
     margin-top: 35px; }
 
 /* =====================
-Revulion Area 
+Revulion Area
 ========================*/
 .revolution-slider-area.slider-bg-1 {
   background-image: url(img/slider/revolution/slider-1.png);
@@ -25854,7 +25854,7 @@ Revulion Area
       bottom: 0px; } }
 
 /* -----------------------------
-Prresentation Area 
+Prresentation Area
 -------------------------------*/
 @media only screen and (max-width: 767px) {
   .presentation-home {
@@ -26247,7 +26247,7 @@ Prresentation Area
   color: #222222; }
 
 /* =====================
-    Fixed Footer 
+    Fixed Footer
 ======================*/
 .all-wrapper {
   position: relative;
@@ -26261,7 +26261,7 @@ Prresentation Area
   z-index: 1; }
 
 /* -------------------------
-    Copyright Variation 
+    Copyright Variation
 ----------------------------*/
 .copyright .copyright-left ul.bk-copyright-menu,
 .copyright .copyright-right ul.bk-copyright-menu {
@@ -26357,7 +26357,7 @@ Prresentation Area
   padding: 4px; }
 
 /* ==========================
-Extra Footer 
+Extra Footer
 ==============================*/
 .page-extra-footer .page-left-text {
   position: fixed;
@@ -26402,7 +26402,7 @@ Extra Footer
 	Color Variation
 =================================*/
 /* ===========================
-    Color Two Variation 
+    Color Two Variation
 =============================*/
 body.template-color-1 .blog-grid .post-content .post-inner h5.heading a:hover {
   color: #0038E3; }
@@ -26572,7 +26572,7 @@ body.template-color-1 .team.team__style--3 .thumb .overlay {
 
 body.template-color-1 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-1 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #0038E3; }
@@ -27017,7 +27017,7 @@ body.template-color-2 .team.team__style--3 .thumb .overlay {
 
 body.template-color-2 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-2 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #FE378C; }
@@ -27462,7 +27462,7 @@ body.template-color-3 .team.team__style--3 .thumb .overlay {
 
 body.template-color-3 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-3 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F0263F; }
@@ -27907,7 +27907,7 @@ body.template-color-4 .team.team__style--3 .thumb .overlay {
 
 body.template-color-4 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-4 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #FCB72B; }
@@ -28352,7 +28352,7 @@ body.template-color-5 .team.team__style--3 .thumb .overlay {
 
 body.template-color-5 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-5 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F8A440; }
@@ -28797,7 +28797,7 @@ body.template-color-6 .team.team__style--3 .thumb .overlay {
 
 body.template-color-6 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-6 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F05874; }
@@ -29242,7 +29242,7 @@ body.template-color-7 .team.team__style--3 .thumb .overlay {
 
 body.template-color-7 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-7 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #99E5E8; }
@@ -29687,7 +29687,7 @@ body.template-color-8 .team.team__style--3 .thumb .overlay {
 
 body.template-color-8 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-8 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #82CECF; }
@@ -30132,7 +30132,7 @@ body.template-color-9 .team.team__style--3 .thumb .overlay {
 
 body.template-color-9 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-9 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F0263F; }
@@ -30577,7 +30577,7 @@ body.template-color-10 .team.team__style--3 .thumb .overlay {
 
 body.template-color-10 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-10 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #19d2a8; }
@@ -31022,7 +31022,7 @@ body.template-color-11 .team.team__style--3 .thumb .overlay {
 
 body.template-color-11 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-11 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #0069FF; }
@@ -31467,7 +31467,7 @@ body.template-color-12 .team.team__style--3 .thumb .overlay {
 
 body.template-color-12 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-12 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F1C078; }
@@ -31912,7 +31912,7 @@ body.template-color-13 .team.team__style--3 .thumb .overlay {
 
 body.template-color-13 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-13 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #CAC0B3; }
@@ -32357,7 +32357,7 @@ body.template-color-14 .team.team__style--3 .thumb .overlay {
 
 body.template-color-14 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-14 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F55D4E; }
@@ -32802,7 +32802,7 @@ body.template-color-15 .team.team__style--3 .thumb .overlay {
 
 body.template-color-15 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-15 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #AC61EE; }
@@ -33247,7 +33247,7 @@ body.template-color-16 .team.team__style--3 .thumb .overlay {
 
 body.template-color-16 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-16 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F5A623; }
@@ -33692,7 +33692,7 @@ body.template-color-17 .team.team__style--3 .thumb .overlay {
 
 body.template-color-17 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-17 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #B013FE; }
@@ -34137,7 +34137,7 @@ body.template-color-18 .team.team__style--3 .thumb .overlay {
 
 body.template-color-18 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-18 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #899664; }
@@ -34582,7 +34582,7 @@ body.template-color-19 .team.team__style--3 .thumb .overlay {
 
 body.template-color-19 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-19 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F12C6E; }
@@ -35027,7 +35027,7 @@ body.template-color-20 .team.team__style--3 .thumb .overlay {
 
 body.template-color-20 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-20 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #CE8F4F; }
@@ -35472,7 +35472,7 @@ body.template-color-21 .team.team__style--3 .thumb .overlay {
 
 body.template-color-21 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-21 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #FB6031; }
@@ -35917,7 +35917,7 @@ body.template-color-22 .team.team__style--3 .thumb .overlay {
 
 body.template-color-22 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-22 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #A810E0; }
@@ -36362,7 +36362,7 @@ body.template-color-23 .team.team__style--3 .thumb .overlay {
 
 body.template-color-23 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-23 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #68AE4A; }
@@ -36807,7 +36807,7 @@ body.template-color-24 .team.team__style--3 .thumb .overlay {
 
 body.template-color-24 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-24 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #BC9464; }
@@ -37252,7 +37252,7 @@ body.template-color-25 .team.team__style--3 .thumb .overlay {
 
 body.template-color-25 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-25 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #9F3939; }
@@ -37697,7 +37697,7 @@ body.template-color-26 .team.team__style--3 .thumb .overlay {
 
 body.template-color-26 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-26 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #7BA100; }
@@ -38142,7 +38142,7 @@ body.template-color-27 .team.team__style--3 .thumb .overlay {
 
 body.template-color-27 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-27 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #14359E; }
@@ -38587,7 +38587,7 @@ body.template-color-28 .team.team__style--3 .thumb .overlay {
 
 body.template-color-28 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-28 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #CC327B; }
@@ -39032,7 +39032,7 @@ body.template-color-29 .team.team__style--3 .thumb .overlay {
 
 body.template-color-29 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-29 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #E23636; }
@@ -39477,7 +39477,7 @@ body.template-color-30 .team.team__style--3 .thumb .overlay {
 
 body.template-color-30 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-30 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #FB6031; }
@@ -39922,7 +39922,7 @@ body.template-color-31 .team.team__style--3 .thumb .overlay {
 
 body.template-color-31 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-31 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #906032; }
@@ -40367,7 +40367,7 @@ body.template-color-32 .team.team__style--3 .thumb .overlay {
 
 body.template-color-32 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-32 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #EC5B4B; }
@@ -40812,7 +40812,7 @@ body.template-color-33 .team.team__style--3 .thumb .overlay {
 
 body.template-color-33 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-33 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #C1B538; }
@@ -41257,7 +41257,7 @@ body.template-color-34 .team.team__style--3 .thumb .overlay {
 
 body.template-color-34 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-34 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #126CDC; }
@@ -41702,7 +41702,7 @@ body.template-color-35 .team.team__style--3 .thumb .overlay {
 
 body.template-color-35 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-35 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #F50809; }
@@ -42147,7 +42147,7 @@ body.template-color-36 .team.team__style--3 .thumb .overlay {
 
 body.template-color-36 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-36 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #4BE472; }
@@ -42592,7 +42592,7 @@ body.template-color-37 .team.team__style--3 .thumb .overlay {
 
 body.template-color-37 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-37 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #DA9D55; }
@@ -43037,7 +43037,7 @@ body.template-color-38 .team.team__style--3 .thumb .overlay {
 
 body.template-color-38 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-38 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #3264F5; }
@@ -43482,7 +43482,7 @@ body.template-color-39 .team.team__style--3 .thumb .overlay {
 
 body.template-color-39 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-39 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #FFC851; }
@@ -43927,7 +43927,7 @@ body.template-color-40 .team.team__style--3 .thumb .overlay {
 
 body.template-color-40 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-40 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #C4DCFA; }
@@ -44372,7 +44372,7 @@ body.template-color-41 .team.team__style--3 .thumb .overlay {
 
 body.template-color-41 .blog-grid--modern.blog-standard {
   /* -------------------
-                                Yellow Color  
+                                Yellow Color
                                 ---------------------*/ }
   body.template-color-41 .blog-grid--modern.blog-standard .post-thumb::after {
     background: #7F48B0; }
@@ -44656,7 +44656,7 @@ body.template-color-25 .single-svg-icon-box .svg-icon svg * {
   stroke: #fff !important; }
 
 /* ======================
-Font Variation 
+Font Variation
 ========================*/
 body.template-font-1 .heading,
 body.template-font-1 h1,
@@ -45123,7 +45123,7 @@ body.template-font-8 .service.service--2 .content p {
   font-family: "Comic Sans MS"; }
 
 /* =====================
-    Preview Area 
+    Preview Area
 ========================*/
 .preview-html {
   scroll-behavior: smooth; }
@@ -45165,7 +45165,7 @@ body.template-font-8 .service.service--2 .content p {
         max-width: 100%; }
 
 /*======================
-Metro Grid Style 3 
+Metro Grid Style 3
 ==========================*/
 .preview-grid-metro {
   margin: 0 -30px; }
@@ -45258,7 +45258,7 @@ Metro Grid Style 3
   padding: 0 140px; }
 
 /*============================
-    Template Layout 
+    Template Layout
 =============================*/
 .pv-template-layout.layout-bg {
   background-image: url(img/preview-image/brook-landing-immensity-of-template-bg.jpg);
@@ -45303,7 +45303,7 @@ Metro Grid Style 3
   background-color: #e9eef0; }
 
 /*======================
-preview Area 
+preview Area
 =========================*/
 .pv-footer-area {
   background-color: #e63a65;
