@@ -87,10 +87,10 @@ def access():
 	if("user_info" in flask.session.keys()):
 		print("user coming in")
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
-		if(len(gtd(user.get()))):
+		if(len(gtd(user.stream()))):
 			print("someone is accessing")
-			print(gtd(user.get())[0])
-			password = gtd(user.get())[0]["password"]
+			print(gtd(user.stream())[0])
+			password = gtd(user.stream())[0]["password"]
 			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
@@ -122,7 +122,7 @@ def auth():
 @app.route('/changepass', methods=['POST'])
 def changepass():
 	if(request.method == 'POST'):
-		user_id = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]["id"]
+		user_id = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).stream())[0]["id"]
 		users_ref.document(user_id).update({'password':request.json["pass"]})
 		return redirect("/access")
 	else:
@@ -134,16 +134,15 @@ def authenticate_with_unity():
 	if(request.method == 'POST'):
 	
 		print("second line")
-		print(request.form)
 
 		data = request.form
-		user = gtd(users_ref.where('email','==', data["email"]).get())
+		user = gtd(users_ref.where('email','==', data["email"]).stream())
 
 		print("user?")
 		print(user[0])
 		if(len(user) != 0):
 			print("user")
-			print(gtd(users_ref.where('email','==', request.form["email"]).get())[0])
+			print(gtd(users_ref.where('email','==', request.form["email"]).stream())[0])
 			user = user[0]
 			print("comparing passwords")
 			print(user["password"])
