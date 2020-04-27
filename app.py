@@ -88,6 +88,8 @@ def access():
 		print("user coming in")
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.get()))):
+			print("someone is accessing")
+			print(gtd(user.get())[0])
 			password = gtd(user.get())[0]["password"]
 			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
 		users_ref.document(ran_gen(6)).set({
@@ -133,6 +135,10 @@ def authenticate_with_unity():
 	
 		print("second line")
 		print(request.form)
+		print("password")
+		print(request.form["password"])
+		print("user")
+		print(gtd(users_ref.where('email','==', request.form["email"]).get())[0])
 		data = request.form
 		user = gtd(users_ref.where('email','==', data["email"]).get())
 		if(len(user) != 0):
