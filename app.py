@@ -135,11 +135,12 @@ def authenticate_with_unity():
 	
 		print("second line")
 		print(request.form)
-		print("password")
-		print(request.form["password"])
 
 		data = request.form
 		user = gtd(users_ref.where('email','==', data["email"]).get())
+
+		print("user?")
+		print(user[0])
 		if(len(user) != 0):
 			print("user")
 			print(gtd(users_ref.where('email','==', request.form["email"]).get())[0])
