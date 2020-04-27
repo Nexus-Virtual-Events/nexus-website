@@ -51,7 +51,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 users_ref = db.collection('users')
-users_ref = db.collection('connect')
+connect_ref = db.collection('connect')
 
 
 app = Flask(__name__)
@@ -69,7 +69,7 @@ def connect():
 @app.route('/receive_connect', methods=['POST'])
 def receiveconnect():
 	data = request.form
-	users_ref.document(ran_gen(8)).set({
+	connect_ref.document(ran_gen(8)).set({
 		        'email': data["email"],
 		        'name': data["name"],
 		        'last_name': data["surname"],
@@ -138,8 +138,8 @@ def authenticate_with_unity():
 		data = request.form
 		user = gtd(users_ref.where('email','==', data["email"]).stream())
 
-		print("user?")
-		print(user[0])
+		print(type(data["email"]))
+
 		if(len(user) != 0):
 			print("user")
 			print(gtd(users_ref.where('email','==', request.form["email"]).stream())[0])
@@ -165,6 +165,7 @@ def authenticate_with_unity():
 			"name":""
 		})
 	else:
+		print("method not post")
 		return "sneaky sneaky"
 
 def credentials_to_dict(credentials):
