@@ -51,7 +51,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 users_ref = db.collection('users')
-
+users_ref = db.collection('connect')
 
 
 app = Flask(__name__)
@@ -61,6 +61,23 @@ app.secret_key = os.environ['SECRET_KEY']
 @app.route('/')
 def index():
     return render_template("index.html")
+
+@app.route('/connect')
+def connect():
+    return render_template("connect.html")
+
+@app.route('/receive_connect', methods=['POST'])
+def receiveconnect():
+	data = request.form
+	users_ref.document(ran_gen(8)).set({
+		        'email': data["email"],
+		        'name': data["name"],
+		        'last_name': data["surname"],
+		        'need':data["need"],
+		        'message':data["message"]
+		    })
+
+	return redirect('/')
 
 @app.route('/access')
 def access():
