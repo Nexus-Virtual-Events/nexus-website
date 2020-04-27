@@ -144,7 +144,11 @@ def authenticate_with_unity():
 			print("user")
 			print(gtd(users_ref.where('email','==', request.form["email"]).get())[0])
 			user = user[0]
+			print("comparing passwords")
+			print(user["password"])
+			print(data["password"])
 			if(user["password"] == data["password"]):
+				print("right password")
 				return json.dumps({
 					"code":0,
 					"admin":(True if data["email"] in admins else False),
