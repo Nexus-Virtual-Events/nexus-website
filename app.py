@@ -137,11 +137,12 @@ def authenticate_with_unity():
 		print(request.form)
 		print("password")
 		print(request.form["password"])
-		print("user")
-		print(gtd(users_ref.where('email','==', request.form["email"]).get())[0])
+
 		data = request.form
 		user = gtd(users_ref.where('email','==', data["email"]).get())
 		if(len(user) != 0):
+			print("user")
+			print(gtd(users_ref.where('email','==', request.form["email"]).get())[0])
 			user = user[0]
 			if(user["password"] == data["password"]):
 				return json.dumps({
