@@ -61,8 +61,9 @@ app.secret_key = os.environ['SECRET_KEY']
 @app.route('/')
 def index():
 	if("user_info" in flask.session.keys()):
-    	return render_template("index.html", logged_in = True)
-	return render_template("index.html", logged_in = False)
+		return render_template("index.html", logged_in = True)
+	else:
+		return render_template("index.html", logged_in = False)
 
 @app.route('/connect')
 def connect():
