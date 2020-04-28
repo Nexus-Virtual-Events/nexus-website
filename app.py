@@ -82,6 +82,10 @@ def receiveconnect():
 
 	return redirect('/')
 
+@app.route('/access2')
+def access2():
+	return render_template("access-1.html")
+
 @app.route('/access')
 def access():
 	# docs = users_ref.stream()
