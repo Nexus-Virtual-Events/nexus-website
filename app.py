@@ -88,13 +88,13 @@ def access2():
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
-			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
+			return render_template("access-2.html", logged_in = True, user_info=flask.session["user_info"], password=password)
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
 	        'name': flask.session["user_info"]["name"]
 	    })
-		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
+		return render_template("access-2.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
 	return redirect('/')
 
 @app.route('/access')
