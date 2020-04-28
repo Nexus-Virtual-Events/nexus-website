@@ -18,11 +18,17 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="padding:20px">
-  <h1 style="text-align:center">Nexus Access</h1>
+<style>
+  .btn-primary{
+    background-color:#E96E6E;
+    border:none;
+  }
+</style>
+<body style="padding:20px;background-color:#413E4A">
+  <h1 style="text-align:center;color:white;">Nexus Access</h1>
   {% if not logged_in %}
   <div style="text-align:center">
-   <a href="/auth/google"><button class="btn btn-primary" style="margin:auto 10px;width:50%">Log in</button></a>
+   <a href="/auth/google"><button class="btn btn-primary" style="margin:auto 10px;width:50%;background-color:#E96E6E;border:none;">Log in</button></a>
  </div>
  {% else %}
  <div class="card">
