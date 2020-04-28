@@ -33,8 +33,8 @@ admins=[
 	"tgachuega20@lawrenceville.org"
 ]
 
-def ran_gen(size, chars=string.ascii_uppercase + string.digits): 
-    return ''.join(random.choice(chars) for x in range(size)) 
+def ran_gen(size, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for x in range(size))
 
 def gtd(generator):
     list = []
@@ -60,7 +60,9 @@ app.secret_key = os.environ['SECRET_KEY']
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+	if("user_info" in flask.session.keys()):
+    	return render_template("index.html", logged_in = True)
+	return render_template("index.html", logged_in = False)
 
 @app.route('/connect')
 def connect():
@@ -132,7 +134,7 @@ def changepass():
 @app.route('/authenticate_with_unity', methods=['POST'])
 def authenticate_with_unity():
 	if(request.method == 'POST'):
-	
+
 		print("second line")
 
 		data = request.form

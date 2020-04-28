@@ -49,7 +49,11 @@
                       </li>
                       <li class="lavel-1 slide--megamenu"><a href="/connect"><span style="font-family: Roboto; font-weight: 200;">Connect</span></a> <!-- Start Mega Menu -->
                       </li>
-                      <li class="lavel-1 slide--megamenu"><a href="/access"><span style="font-family: Roboto; font-weight: 200;">Portal</span></a> <!-- Start Mega Menu -->
+                      {% if logged_in %}
+                      <li class="lavel-1 slide--megamenu"><a href="/access"><span class="theme-creative">Portal</span></a> <!-- Start Mega Menu -->
+                      {% else %}
+                      <li class="lavel-1 slide--megamenu"><a href="/auth/google"><span style="font-family: Roboto; font-weight: 200;">Login</span></a> <!-- Start Mega Menu -->
+                      {% endif %}
                       </li>
                     </ul>
                   </nav>
