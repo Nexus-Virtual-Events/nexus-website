@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{url_for('static',filename='css/vertical-layout-dark/style.css')}}"> <!-- endinject -->
   <link rel="shortcut icon" href="{{url_for('static',filename='img/logo/nexus-icon.png')}}" />
   <style>
-    .btn {
+    .btn-download {
       position: relative;
       background: -webkit-gradient(linear, right top, left top, from(#EE7752), color-stop(#E73C7E), color-stop(#23A6D5), color-stop(#23D5AB), to(#EE7752));
       background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
@@ -28,7 +28,7 @@
       text-decoration: none;
     }
 
-    .btn div {
+    .btn-download div {
       height: 100%;
       background-color: #1d1d1d;
       display: -webkit-box;
@@ -68,7 +68,7 @@
       }
     }
 
-    .btn::after {
+    .btn-download::after {
       content: '';
       position: absolute;
       background-size: inherit;
@@ -166,20 +166,19 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Downloads</h4>
-                  <p class="card-description">The Nexus™ Cloud</code></p>
+                  <p class="card-description">The Nexus™ Cloud</p>
                   <div class="template-demo">
-                    <button type="button" class="btn btn-lg btn-block btn-dark btn-icon-text" style="background-image: linear-gradient(#FF416C, #FF4B2B)">
-                      <i class="ti-download btn-icon-prepend"></i>
-                      <span style="font-size: 17px">Nexus™ Cloud (Mac)</span>
-                    </button>
-                    <button type="button" class="btn btn-lg btn-block btn-dark btn-icon-text" style="background-image: linear-gradient(#7F7FD5, #86A8E7)">
-                      <i class="ti-download btn-icon-prepend"></i>
-                      <span style="font-size: 17px">Nexus™ Cloud (Windows)</span>
-                    </button>
                     <div>
-                      <a class="btn" href="/">
+                      <a class="btn btn-download btn-block" href="/">
                         <div>
                           Nexus™ Cloud (Mac)
+                        </div>
+                      </a>
+                    </div>
+                    <div style="padding-top:5px;">
+                      <a class="btn btn btn-download btn-block" href="/">
+                        <div>
+                          Nexus™ Cloud (Window)
                         </div>
                       </a>
                     </div>
