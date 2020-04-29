@@ -10,9 +10,27 @@
   <link rel="stylesheet" href="{{url_for('static',filename='css/vertical-layout-dark/style.css')}}"> <!-- endinject -->
   <link rel="shortcut icon" href="{{url_for('static',filename='img/logo/nexus-icon.png')}}" />
   <style>
-    .btn-download {
+    .btn-download-mac {
       position: relative;
       background: -webkit-gradient(linear, right top, left top, from(#EE7752), color-stop(#E73C7E), color-stop(#23A6D5), color-stop(#23D5AB), to(#EE7752));
+      background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
+      background-size: 400% 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.25em;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      -webkit-animation: Gradient 4s ease infinite;
+      animation: Gradient 4s ease infinite;
+      text-decoration: none;
+    }
+
+    .btn-download-windows {
+      position: relative;
+      background: -webkit-gradient(linear, right top, left top, from(#EE7752), color-stop(#23D5AB), color-stop(#23A6D5), color-stop(#E73C7E), to(#EE7752));
       background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
       background-size: 400% 100%;
       text-transform: uppercase;
@@ -169,14 +187,14 @@
                   <p class="card-description">The Nexus™ Cloud</p>
                   <div class="template-demo">
                     <div>
-                      <a class="btn btn-download btn-block" href="/">
+                      <a class="btn btn-download-mac btn-block" href="/">
                         <div>
                           Nexus™ Cloud (Mac)
                         </div>
                       </a>
                     </div>
                     <div style="padding-top:5px;">
-                      <a class="btn btn btn-download btn-block" href="/">
+                      <a class="btn btn btn-download-windows btn-block" href="/">
                         <div>
                           Nexus™ Cloud (Window)
                         </div>
