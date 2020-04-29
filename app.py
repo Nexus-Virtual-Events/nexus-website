@@ -82,45 +82,45 @@ def receiveconnect():
 
 	return redirect('/')
 
-@app.route('/access2')
-def access2():
-	if("user_info" in flask.session.keys()):
-		user = users_ref.where('email','==', flask.session["user_info"]["email"])
-		if(len(gtd(user.stream()))):
-			password = gtd(user.stream())[0]["password"]
-			return render_template("access-1.html", user_info=flask.session["user_info"], password=password)
-		users_ref.document(ran_gen(6)).set({
-	        'email': flask.session["user_info"]["email"],
-	        'password': "",
-	        'name': flask.session["user_info"]["name"]
-	    })
-		return render_template("access-1.html", user_info=flask.session["user_info"], password="You need to set a new password")
-	return redirect('/')
-
 @app.route('/register')
 def register():
 	return render_template("register.html")
 
 @app.route('/access')
-def access():
-	# docs = users_ref.stream()
-	# for doc in docs:
-	#     print(u'{} => {}'.format(doc.id, doc.to_dict()))
+def access2():
 	if("user_info" in flask.session.keys()):
-		print("user coming in")
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
-			print("someone is accessing")
-			print(gtd(user.stream())[0])
 			password = gtd(user.stream())[0]["password"]
-			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
+			return render_template("access-1.html", user_info=flask.session["user_info"])
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
 	        'name': flask.session["user_info"]["name"]
 	    })
-		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
-	return render_template("access.html", logged_in = False)
+		return redirect('/register')
+	return redirect('/')
+
+# @app.route('/access')
+# def access():
+# 	# docs = users_ref.stream()
+# 	# for doc in docs:
+# 	#     print(u'{} => {}'.format(doc.id, doc.to_dict()))
+# 	if("user_info" in flask.session.keys()):
+# 		print("user coming in")
+# 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
+# 		if(len(gtd(user.stream()))):
+# 			print("someone is accessing")
+# 			print(gtd(user.stream())[0])
+# 			password = gtd(user.stream())[0]["password"]
+# 			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
+# 		users_ref.document(ran_gen(6)).set({
+# 	        'email': flask.session["user_info"]["email"],
+# 	        'password': "",
+# 	        'name': flask.session["user_info"]["name"]
+# 	    })
+# 		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
+# 	return render_template("access.html", logged_in = False)
 
 
 @app.route('/auth/google')
