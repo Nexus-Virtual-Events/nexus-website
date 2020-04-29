@@ -92,7 +92,7 @@ def access2():
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
-			return render_template("access-1.html", user_info=flask.session["user_info"])
+			return render_template("access.html", user_info=flask.session["user_info"])
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
@@ -103,9 +103,6 @@ def access2():
 
 # @app.route('/access')
 # def access():
-# 	# docs = users_ref.stream()
-# 	# for doc in docs:
-# 	#     print(u'{} => {}'.format(doc.id, doc.to_dict()))
 # 	if("user_info" in flask.session.keys()):
 # 		print("user coming in")
 # 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
