@@ -1,219 +1,71 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Nexus // Virtual Events</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Favicon -->
-  <link rel="shortcut icon" href="{{url_for('static',filename='img/favicon.ico')}}" type="image/x-icon">
-  <link rel="apple-touch-icon" href="{{url_for('static',filename='img/icon.png')}}"> <!-- Plugins -->
-  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{url_for('static',filename='css/revoulation.css')}}">
-  <link rel="stylesheet" href="{{url_for('static',filename='css/plugins.css')}}"> <!-- Style Css -->
-  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> <!-- Custom Styles -->
-  <link rel="stylesheet" href="{{url_for('static',filename='css/custom.css')}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nexus // Registration</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='vendors/css/vendor.bundle.base.css')}}">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/vertical-layout-dark/style.css')}}">
+  <!-- endinject -->
+  <link rel="shortcut icon"/>
 </head>
 
-<body class="template-font-3 template-color-2" style="background-color:black">
-  <!--[if lte IE 9]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p> <![endif]-->
-  <!-- Add your site or application content here -->
-  <!-- Start PReloader -->
-  <div id="page-preloader" class="page-loading clearfix">
-    <div class="page-load-inner">
-      <div class="preloader-wrap">
-        <div class="wrap-2">
-          <div class=""> <img src="{{url_for('static',filename='img/icons/brook-preloader.gif')}}" alt="Brook Preloader"></div>
+<body style="background-image: url(https://the-nexus.herokuapp.com/static/img/bg/bg.jpg)">
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <h4>New here?</h4>
+              <h6 class="font-weight-light">You haven't set your password yet. Create one now</h6>
+              <form class="pt-3">
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="mb-4">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      I agree to all Terms & Conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">FINISH REGISTRATION</a>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                  Already have an account? <a href="login.html" class="text-primary">Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- content-wrapper ends -->
     </div>
-  </div> <!-- End PReloader -->
-  <!-- Wrapper -->
-  <div id="wrapper" class="wrapper bg_color--4 all-wrapper">
-    <!-- Header -->
-    <header class="br_header header-default header-transparent pt--15 light-logo--version haeder-fixed-width headroom--sticky header-mega-menu clearfix">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="header__wrapper mr--0">
-              <!-- Header Left -->
-              <div class="header-left flex-20">
-                <div class="logo"> <a href="{{url_for('static',filename='index.html')}}"> <img src="{{url_for('static',filename='img/logo/nexus-logo-small.png')}}" alt="Brook Images"> </a> </div>
-              </div> <!-- Mainmenu Wrap -->
-              <div class="header-flex-right flex-80">
-                <div class="mainmenu-wrapper have-not-flex d-none d-lg-block">
-                  <nav class="page_nav">
-                    <ul class="mainmenu">
-                      <li class="lavel-1 slide--megamenu"><a href="#"><span style="font-family: Roboto; font-weight: 200;">Blog</span></a> <!-- Start Mega Menu -->
-                      </li>
-                      <li class="lavel-1 slide--megamenu"><a href="/connect"><span style="font-family: Roboto; font-weight: 200;">Connect</span></a> <!-- Start Mega Menu -->
-                      </li>
-                      {% if logged_in %}
-                      <li class="lavel-1 slide--megamenu"><a href="/access"><span class="theme-creative">Portal</span></a> <!-- Start Mega Menu -->
-                        {% else %}
-                      <li class="lavel-1 slide--megamenu"><a href="/auth/google"><span style="font-family: Roboto; font-weight: 200;">Login</span></a> <!-- Start Mega Menu -->
-                        {% endif %}
-                      </li>
-                    </ul>
-                  </nav>
-                </div> <!-- Header Right -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="slider-revoluation poss_relative">
-      <div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
-        <ul>
-          <!-- SLIDE -->
-          <li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-            <!-- MAIN IMAGE --> <img src="{{url_for('static',filename='img/bg/bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-            <!-- LAYERS -->
-            <!-- LAYER NR. 1 -->
-            <div class="tp-caption " id="slide-7-layer-11" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-220','-220','-220','-220']" data-width="130"
-              data-height="130" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off"
-              data-frames='[{"delay":300,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-              data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 5; min-width: 130px; max-width: 130px; max-width: 130px; max-width: 130px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
-              <!-- Start Single Popup -->
-              <div class="video-btn-2"> <a class="play__btn" href="https://www.youtube.com/watch?v=9No-FiEInLA">
-                  <div class="icon-gradient color-pink">
-                    <div class="video-icon"></div>
-                  </div>
-                </a> </div> <!-- End Single Popup -->
-            </div> <!-- LAYER NR. 2 -->
-            <div class="tp-caption creative-agency-heading" id="slide-7-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','1','1']" data-y="['middle','middle','middle','middle']" data-voffset="['-52','-52','-50','-50']"
-              data-fontsize="['120','100','80','60']" data-lineheight="['146','122','98','74']" data-width="['none','none','400','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text"
-              data-responsive_offset="off" data-responsive="off"
-              data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-              data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 6; white-space: nowrap; font-size: 120px; line-height: 146px; font-family: Roboto; font-weight: 200; color: #ffffff; letter-spacing: 0px">
-              <div class="container-scroller">
-                <div class="container-fluid page-body-wrapper full-page-wrapper">
-                  <div class="content-wrapper d-flex align-items-center auth px-0">
-                    <div class="row w-100 mx-0">
-                      <div class="col-lg-4 mx-auto">
-                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                          <h4>New here?</h4>
-                          <h6 class="font-weight-light">You haven't set your password yet. Create one now</h6>
-                          <form class="pt-3">
-                            <div class="form-group">
-                              <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                            <div class="mb-4">
-                              <div class="form-check">
-                                <label class="form-check-label text-muted">
-                                  <input type="checkbox" class="form-check-input">
-                                  I agree to all Terms & Conditions
-                                </label>
-                              </div>
-                            </div>
-                            <div class="mt-3">
-                              <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">FINISH REGISTRATION</a>
-                            </div>
-                            <div class="text-center mt-4 font-weight-light">
-                              Already have an account? <a href="login.html" class="text-primary">Login</a>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- content-wrapper ends -->
-                </div>
-                <!-- page-body-wrapper ends -->
-              </div>
-            </div>
-            <!-- LAYER NR. 3 -->
-            </a> <!-- LAYER NR. 6 --> <a class="tp-caption " href="mailto:nexus.virtualevents@gmail.com" target="_self" id="slide-7-layer-8" data-x="['left','left','left','left']" data-hoffset="['50','0','0','0']" data-y="['middle','middle','middle','middle']"
-              data-voffset="['50','50','50','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="text" data-actions='' data-basealign="slide" data-responsive_offset="off"
-              data-responsive="off"
-              data-frames='[{"delay":1100,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;rZ:-90;tO:20% 0%;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-              data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 10; white-space: nowrap; font-size: 15px; line-height: 21px; font-weight: 500; color: #ffffff; letter-spacing: 2px;text-decoration: none;">nexus.virtualevents@gmail.com </a> <!-- LAYER NR. 7 -->
-            <div class="tp-caption " id="slide-7-layer-9" data-x="['right','right','center','center']" data-hoffset="['45','45','0','0']" data-y="['middle','middle','bottom','bottom']" data-voffset="['-30','-30','110','110']"
-              data-width="['55','55','300','300']" data-height="['none','none','55','55']" data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off"
-              data-frames='[{"delay":1100,"speed":1500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-              data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 11; min-width: 55px; max-width: 55px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">
-              <ul class="social-icon icon-border-rounded icon-size-medium social-vertical text-center">
-                <li class="facebook"><a href="#" class="link" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                <li class="twitter"><a href="#" class="link" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                <li class="instagram"><a href="#" class="link" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-      </div>
-    </div> <!-- END REVOLUTION SLIDER -->
-
-    <!-- Start Row Columns Area -->
-    <div>
-      <div class="firefly brook-row-column-area clearfix">
-        <div class="aaa creative-gradient--1 ptb--150">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="call-to-action callto-action--1">
-                  <div class="content">
-                    <h6>Host your events in no time</h6>
-                    <h3>Ready to enjoy <span>a virtual event ?</span></h3> <button><span>Contact us</span><i class="fa fa-arrow-right"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Row Columns Area -->
-      </main>
-      <!--// Page Conttent -->
-    </div> <!-- Footer -->
-    <footer id="page-footer-wrapper" class="page-footer-wrapper page-footer bg_color--4 fixed-footer">
-      <!-- Start Copyright Area -->
-      <div class="copyright copyright--2 plr_sm--30">
-        <div class="container ptb--40">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-              <div class="copyright-left text-md-left text-left">
-                <p class="m-0">© 2020 Nexus. All Rights Reserved.</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-              <div class="copyright-right text-center text-sm-right">
-                <div class="input-box"> <input type="email" placeholder="Your e-mail"> <button><i class="ion-android-arrow-forward"></i></button> </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Copyright Area -->
-    </footer>
-    <!--// Footer -->
-    <!--// Wrapper -->
-    <!-- Js Files -->
-    <script src="{{url_for('static',filename='js/vendor/modernizr-3.6.0.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/vendor/jquery.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/plugins.js')}}"></script>
-    <script src="{{url_for('static',filename='js/main.js')}}"></script> <!-- REVOLUTION JS FILES -->
-    <script src="{{url_for('static',filename='js/jquery.themepunch.tools.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/jquery.themepunch.revolution.min.js')}}"></script>
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS (Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading) -->
-    <script src="{{url_for('static',filename='js/revolution.extension.actions.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.carousel.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.kenburn.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.layeranimation.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.migration.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.navigation.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.parallax.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.slideanims.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revolution.extension.video.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/revoulation.js')}}"></script>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{{url_for('static',filename='vendors/js/vendor.bundle.base.js')}}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <script src="{{url_for('static',filename='js/off-canvas.js')}}"></script>
+  <script src="{{url_for('static',filename='js/hoverable-collapse.js')}}"></script>
+  <script src="{{url_for('static',filename='js/template.js')}}"></script>
+  <script src="{{url_for('static',filename='js/settings.js')}}"></script>
+  <script src="{{url_for('static',filename='js/todolist.js')}}"></script>
+  <!-- endinject -->
 </body>
 
 </html>
