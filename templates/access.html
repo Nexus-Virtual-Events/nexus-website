@@ -9,15 +9,88 @@
   <link rel="stylesheet" href="{{url_for('static',filename='vendors/css/vendor.bundle.base.css')}}"> <!-- endinject -->
   <link rel="stylesheet" href="{{url_for('static',filename='css/vertical-layout-dark/style.css')}}"> <!-- endinject -->
   <link rel="shortcut icon" href="{{url_for('static',filename='img/logo/nexus-icon.png')}}" />
+  <style>
+    .btn {
+      position: relative;
+      background: -webkit-gradient(linear, right top, left top, from(#EE7752), color-stop(#E73C7E), color-stop(#23A6D5), color-stop(#23D5AB), to(#EE7752));
+      background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
+      background-size: 400% 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.25em;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      -webkit-animation: Gradient 4s ease infinite;
+      animation: Gradient 4s ease infinite;
+      text-decoration: none;
+    }
+
+    .btn div {
+      height: 100%;
+      background-color: #1d1d1d;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      color: black;
+      min-height: 40px;
+      padding: 0 1.618em;
+      border-radius: inherit;
+      background-size: inherit;
+      background-image: inherit;
+      -webkit-animation: Gradient 4s ease infinite;
+      animation: Gradient 4s ease infinite;
+      position: relative;
+      z-index: 1;
+      mix-blend-mode: overlay;
+      font-family: 'Helvetica Neue';
+
+    }
+
+    @-webkit-keyframes Gradient {
+      50% {
+        background-position: 140% 50%;
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+    }
+
+    @keyframes Gradient {
+      50% {
+        background-position: 140% 50%;
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      background-size: inherit;
+      background-image: inherit;
+      -webkit-animation: inherit;
+      animation: inherit;
+      left: 0px;
+      right: 0px;
+      top: 2px;
+      height: 100%;
+      -webkit-filter: blur(1rem);
+      filter: blur(1rem);
+    }
+  </style>
 </head>
 
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"> <a class="navbar-brand brand-logo mr-5" href="/"><img
-            src="{{url_for('static',filename='img/logo/nexus-gradient-full.svg')}}" class="mr-2" alt="logo" /></a> <a class="navbar-brand brand-logo-mini" href="/"><img
-            src="{{url_for('static',filename='img/logo/nexus-icon-white.svg')}}" alt="logo" /></a> </div>
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"> <a class="navbar-brand brand-logo mr-5" href="/"><img src="{{url_for('static',filename='img/logo/nexus-gradient-full.svg')}}" class="mr-2"
+            alt="logo" /></a> <a class="navbar-brand brand-logo-mini" href="/"><img src="{{url_for('static',filename='img/logo/nexus-icon-white.svg')}}" alt="logo" /></a> </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"> <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize"> <span class="ti-layout-grid2"></span> </button>
         <ul class="navbar-nav mr-lg-2">
           <li class="nav-item nav-search d-none d-lg-block">
@@ -52,7 +125,7 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-5 mb-4 mb-xl-0">
-                  <h4 class="font-weight-light col-12 " style="font-size: 40px;" >Welcome, {{ user_info["name"] }}!</h4>
+                  <h4 class="font-weight-light col-12 " style="font-size: 40px;">Welcome, {{ user_info["name"] }}!</h4>
                 </div>
               </div>
             </div>
@@ -80,7 +153,7 @@
                       <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" checked="">
                         Notify Pinner
-                      <i class="input-helper"></i></label>
+                        <i class="input-helper"></i></label>
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Submit</button>
                   </form>
@@ -99,10 +172,17 @@
                       <i class="ti-download btn-icon-prepend"></i>
                       <span style="font-size: 17px">Nexus™ Cloud (Mac)</span>
                     </button>
-                    <button type="button" class="btn btn-lg btn-block btn-dark btn-icon-text" style="background-image: linear-gradient(#7F7FD5, #86A8E7, #91EAE4)">
+                    <button type="button" class="btn btn-lg btn-block btn-dark btn-icon-text" style="background-image: linear-gradient(#7F7FD5, #86A8E7)">
                       <i class="ti-download btn-icon-prepend"></i>
                       <span style="font-size: 17px">Nexus™ Cloud (Windows)</span>
                     </button>
+                    <div>
+                      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfTaa-_wOFOQv3dZ7Ord9TJ3vN8wNdzUY5VQqzFiTg_WMQwEw/viewform?c=0&w=1">
+                        <div>
+                          new talk proposal
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -111,8 +191,8 @@
         </div> <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between"> <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a href="http://www.thenexus.cloud/"
-                target="_blank">Nexus</a>. All rights reserved.</span> <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span> </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between"> <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a href="http://www.thenexus.cloud/" target="_blank">Nexus</a>. All
+              rights reserved.</span> <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span> </div>
         </footer> <!-- partial -->
       </div> <!-- main-panel ends -->
     </div> <!-- page-body-wrapper ends -->
