@@ -28,62 +28,6 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown mr-1"> <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown"> <i class="ti-email mx-0"></i> </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p> <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail"> <img src="{{url_for('static',filename='images/faces/face4.jpg')}}" alt="image" class="profile-pic"> </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-normal">David Grey </h6>
-                  <p class="font-weight-light small-text text-muted mb-0"> The meeting is cancelled </p>
-                </div>
-              </a> <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail"> <img src="{{url_for('static',filename='images/faces/face2.jpg')}}" alt="image" class="profile-pic"> </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook </h6>
-                  <p class="font-weight-light small-text text-muted mb-0"> New product launch </p>
-                </div>
-              </a> <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail"> <img src="{{url_for('static',filename='images/faces/face3.jpg')}}" alt="image" class="profile-pic"> </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-normal"> Johnson </h6>
-                  <p class="font-weight-light small-text text-muted mb-0"> Upcoming board meeting </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown"> <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> <i class="ti-bell mx-0"></i> <span class="count"></span> </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p> <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success"> <i class="ti-info-alt mx-0"></i> </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted"> Just now </p>
-                </div>
-              </a> <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning"> <i class="ti-settings mx-0"></i> </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Settings</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted"> Private message </p>
-                </div>
-              </a> <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info"> <i class="ti-user mx-0"></i> </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted"> 2 days ago </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item nav-profile dropdown"> <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown"> <img src="{{url_for('static',filename='images/faces/face28.jpg')}}" alt="profile" /> </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown"> <a class="dropdown-item"> <i class="ti-settings text-primary"></i> Settings </a> <a class="dropdown-item"> <i
-                  class="ti-power-off text-primary"></i> Logout </a> </div>
-          </li>
           <li class="nav-item nav-settings d-none d-lg-flex"> <a class="nav-link" href="#"> <i class="ti-more"></i> </a> </li>
         </ul> <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas"> <span class="ti-layout-grid2"></span> </button>
       </div>
@@ -103,87 +47,13 @@
               </form>
             </div>
             <div class="list-wrapper px-3">
-              <ul class="d-flex flex-column-reverse todo-list">
-                <li>
-                  <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Team review meeting at 3.00 PM </label> </div> <i class="remove ti-close"></i>
-                </li>
-                <li>
-                  <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Prepare for presentation </label> </div> <i class="remove ti-close"></i>
-                </li>
-                <li>
-                  <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Resolve all the low priority tickets due today </label> </div> <i class="remove ti-close"></i>
-                </li>
-                <li class="completed">
-                  <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox" checked> Schedule meeting for next week </label> </div> <i class="remove ti-close"></i>
-                </li>
-                <li class="completed">
-                  <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox" checked> Project review </label> </div> <i class="remove ti-close"></i>
-                </li>
-              </ul>
             </div>
             <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
-            <div class="events pt-4 px-3">
-              <div class="wrapper d-flex mb-2"> <i class="ti-control-record text-primary mr-2"></i> <span>Feb 11 2018</span> </div>
-              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
-              <p class="text-gray mb-0">build a js based app</p>
-            </div>
-            <div class="events pt-4 px-3">
-              <div class="wrapper d-flex mb-2"> <i class="ti-control-record text-primary mr-2"></i> <span>Feb 7 2018</span> </div>
-              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
-              <p class="text-gray mb-0 ">Call Sarah Graves</p>
-            </div>
           </div> <!-- To do section tab ends -->
           <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
             <div class="d-flex align-items-center justify-content-between border-bottom">
               <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p> <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
             </div>
-            <ul class="chat-list">
-              <li class="list active">
-                <div class="profile"><img src="{{url_for('static',filename='images/faces/face1.jpg')}}" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Thomas Douglas</p>
-                  <p>Available</p>
-                </div> <small class="text-muted my-auto">19 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="{{url_for('static',filename='images/faces/face2.jpg')}}" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <div class="wrapper d-flex">
-                    <p>Catherine</p>
-                  </div>
-                  <p>Away</p>
-                </div>
-                <div class="badge badge-success badge-pill my-auto mx-2">4</div> <small class="text-muted my-auto">23 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="{{url_for('static',filename='images/faces/face3.jpg')}}" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Daniel Russell</p>
-                  <p>Available</p>
-                </div> <small class="text-muted my-auto">14 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="{{url_for('static',filename='images/faces/face4.jpg')}}" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <p>James Richardson</p>
-                  <p>Away</p>
-                </div> <small class="text-muted my-auto">2 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="{{url_for('static',filename='images/faces/face5.jpg')}}" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Madeline Kennedy</p>
-                  <p>Available</p>
-                </div> <small class="text-muted my-auto">5 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="{{url_for('static',filename='images/faces/face6.jpg')}}" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Sarah Graves</p>
-                  <p>Available</p>
-                </div> <small class="text-muted my-auto">47 min</small>
-              </li>
-            </ul>
           </div> <!-- chat tab ends -->
         </div>
       </div> <!-- partial -->
@@ -208,28 +78,28 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Inline forms</h4>
+                  <h4 class="card-title">Pinner Selection</h4>
                   <p class="card-description">
-                    Use the <code>.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row
+                    Enter your pinner's information (full name and email) to grant pinning privileges in the Nexus Cloud™.
                   </p>
                   <form class="form-inline">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Steve Murray">
 
-                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Email Address</label>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="smurray@lawrenceville.org">
                     </div>
                     <div class="form-check mx-sm-2">
                       <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" checked="">
-                        Remember me
+                        Notify Pinner
                       <i class="input-helper"></i></label>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-icon-text mb-2"><i class="ti-save btn-icon-prepend"></i>Save</button>
                   </form>
                 </div>
               </div>
