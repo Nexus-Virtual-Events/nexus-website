@@ -52,6 +52,7 @@ db = firestore.client()
 
 users_ref = db.collection('users')
 connect_ref = db.collection('connect')
+pinner_ref = db.collection('pinner_requests')
 
 
 app = Flask(__name__)
@@ -68,6 +69,29 @@ def index():
 @app.route('/connect')
 def connect():
     return render_template("connect.html")
+
+@app.route('/set_pinner', methods=['POST'])
+def setpinner():
+
+	print(json.loads(request.data))
+
+	pinner_email = json.loads(request.data)["pinner_email"]
+	pinner_name = json.loads(request.data)["pinner_name"]
+
+	if(pinner_email == "" or pinner_name == ""):
+		return "Email name or email field, try again."
+
+	found_by_email = gtd(users_ref.where('email', '==', pinner_email).get())
+	found_by_name = gtd(users_ref.where('name', '==', pinner_email).get())
+
+	if(len(found_by_name) or len(found_by_email)):
+		found_by_name[0].update({
+				"pinner_name":pinner_name,
+				"pinner_email":pinner_email
+			})
+		return "Pinner set!"
+	
+	return "Pinner could not be found. Are you sure your pinner has signed up yet?"
 
 @app.route('/receive_connect', methods=['POST'])
 def receiveconnect():
