@@ -87,12 +87,12 @@ def register():
 	return render_template("register.html")
 
 @app.route('/access')
-def access2():
+def access():
 	if("user_info" in flask.session.keys()):
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
-			return render_template("access.html", user_info=flask.session["user_info"])
+			return render_template("lawrenceville.html", user_info=flask.session["user_info"])
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
@@ -100,25 +100,6 @@ def access2():
 	    })
 		return redirect('/register')
 	return redirect('/')
-
-# @app.route('/access')
-# def access():
-# 	if("user_info" in flask.session.keys()):
-# 		print("user coming in")
-# 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
-# 		if(len(gtd(user.stream()))):
-# 			print("someone is accessing")
-# 			print(gtd(user.stream())[0])
-# 			password = gtd(user.stream())[0]["password"]
-# 			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
-# 		users_ref.document(ran_gen(6)).set({
-# 	        'email': flask.session["user_info"]["email"],
-# 	        'password': "",
-# 	        'name': flask.session["user_info"]["name"]
-# 	    })
-# 		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
-# 	return render_template("access.html", logged_in = False)
-
 
 @app.route('/auth/google')
 def auth():
