@@ -30,8 +30,16 @@ admins=[
 	"acanberk21@lawrenceville.org",
 	"ahasan20@lawrenceville.org",
 	"ekosoff@lawrenceville.org",
-	"tgachuega20@lawrenceville.org"
+	"tgachuega20@lawrenceville.org",
 ]
+
+
+def email_to_school(email):
+    special_indexes = []
+    for x in range(0, len(email)):
+        if email[x] == "." or email[x] == "@":
+            special_indexes.append(x)
+    return email[special_indexes[-2]+1:special_indexes[-1]]
 
 def ran_gen(size, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
@@ -52,6 +60,7 @@ db = firestore.client()
 
 users_ref = db.collection('users')
 connect_ref = db.collection('connect')
+pinner_ref = db.collection('pinner_requests')
 
 
 app = Flask(__name__)
@@ -68,6 +77,29 @@ def index():
 @app.route('/connect')
 def connect():
     return render_template("connect.html")
+
+@app.route('/set_pinner', methods=['POST'])
+def setpinner():
+
+	print(json.loads(request.data))
+
+	pinner_email = json.loads(request.data)["pinner_email"]
+	pinner_name = json.loads(request.data)["pinner_name"]
+
+	if(pinner_email == "" or pinner_name == ""):
+		return "Email name or email field, try again."
+
+	found_by_email = gtd(users_ref.where('email', '==', pinner_email).get())
+	found_by_name = gtd(users_ref.where('name', '==', pinner_email).get())
+
+	if(len(found_by_name) or len(found_by_email)):
+		found_by_name[0].update({
+				"pinner_name":pinner_name,
+				"pinner_email":pinner_email
+			})
+		return "Pinner set!"
+	
+	return "Pinner could not be found. Are you sure your pinner has signed up yet?"
 
 @app.route('/receive_connect', methods=['POST'])
 def receiveconnect():
@@ -96,7 +128,8 @@ def access():
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
-	        'name': flask.session["user_info"]["name"]
+	        'name': flask.session["user_info"]["name"],
+	        'school':email_to_school(flask.session["user_info"]["email"])
 	    })
 		return redirect('/register')
 	return redirect('/')

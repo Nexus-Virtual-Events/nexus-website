@@ -173,7 +173,7 @@
                         Notify Pinner
                         <i class="input-helper"></i></label>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    <button type="submit" class="btn btn-primary mb-2" onclick="sendPinner()">Submit</button>
                   </form>
                 </div>
               </div>
@@ -227,5 +227,24 @@
   <!-- Custom js for this page-->
   <script src="{{url_for('static',filename='js/dashboard.js')}}"></script> <!-- End custom js for this page-->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+function sendPinner(){
+    pinner_email = document.getElementById("inlineFormInputGroupUsername2").value;
+    pinner_name = document.getElementById("inlineFormInputName2").value;
+    axios({
+      method:'post',
+      url:'/set_pinner',
+      data:{
+        pinner_email:pinner_email,
+        pinner_name:pinner_name
+      }
+    }).catch(e=>console.log(e)).then(data => {alert(data["data"]); window.location.reload();})
+    return false;
+  }
+
+</script>
 
 </html>
