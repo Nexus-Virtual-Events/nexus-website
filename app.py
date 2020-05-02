@@ -30,8 +30,16 @@ admins=[
 	"acanberk21@lawrenceville.org",
 	"ahasan20@lawrenceville.org",
 	"ekosoff@lawrenceville.org",
-	"tgachuega20@lawrenceville.org"
+	"tgachuega20@lawrenceville.org",
 ]
+
+
+def email_to_school(email):
+    special_indexes = []
+    for x in range(0, len(email)):
+        if email[x] == "." or email[x] == "@":
+            special_indexes.append(x)
+    return email[special_indexes[-2]+1:special_indexes[-1]]
 
 def ran_gen(size, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
@@ -120,7 +128,8 @@ def access2():
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
-	        'name': flask.session["user_info"]["name"]
+	        'name': flask.session["user_info"]["name"],
+	        'school':email_to_school(flask.session["user_info"]["email"])
 	    })
 		return redirect('/register')
 	return redirect('/')
