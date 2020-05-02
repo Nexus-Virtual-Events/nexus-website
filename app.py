@@ -98,7 +98,7 @@ def setpinner():
 				"pinner_email":pinner_email
 			})
 		return "Pinner set!"
-	
+
 	return "Pinner could not be found. Are you sure your pinner has signed up yet?"
 
 @app.route('/receive_connect', methods=['POST'])
@@ -124,7 +124,7 @@ def access():
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
-			return render_template("lawrenceville.html", user_info=flask.session["user_info"])
+			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"])
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
