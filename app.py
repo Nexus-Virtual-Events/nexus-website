@@ -74,6 +74,10 @@ def index():
 	else:
 		return render_template("index.html", logged_in = False)
 
+@app.route('/why-nexus')
+def why_nexus():
+	render_template("why-nexus.html")
+
 @app.route('/connect')
 def connect():
     return render_template("connect.html")
