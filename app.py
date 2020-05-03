@@ -30,11 +30,19 @@ admins=[
 	"acanberk21@lawrenceville.org",
 	"ahasan20@lawrenceville.org",
 	"ekosoff@lawrenceville.org",
-	"tgachuega20@lawrenceville.org"
+	"tgachuega20@lawrenceville.org",
 ]
 
-def ran_gen(size, chars=string.ascii_uppercase + string.digits): 
-    return ''.join(random.choice(chars) for x in range(size)) 
+
+def email_to_school(email):
+    special_indexes = []
+    for x in range(0, len(email)):
+        if email[x] == "." or email[x] == "@":
+            special_indexes.append(x)
+    return email[special_indexes[-2]+1:special_indexes[-1]]
+
+def ran_gen(size, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for x in range(size))
 
 def gtd(generator):
     list = []
@@ -51,7 +59,8 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 users_ref = db.collection('users')
-
+connect_ref = db.collection('connect')
+pinner_ref = db.collection('pinner_requests')
 
 
 app = Flask(__name__)
@@ -60,27 +69,70 @@ app.secret_key = os.environ['SECRET_KEY']
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+	if("user_info" in flask.session.keys()):
+		return render_template("index.html", logged_in = True)
+	else:
+		return render_template("index.html", logged_in = False)
+
+@app.route('/connect')
+def connect():
+    return render_template("connect.html")
+
+@app.route('/set_pinner', methods=['POST'])
+def setpinner():
+
+	print(json.loads(request.data))
+
+	pinner_email = json.loads(request.data)["pinner_email"]
+	pinner_name = json.loads(request.data)["pinner_name"]
+
+	if(pinner_email == "" or pinner_name == ""):
+		return "Email name or email field, try again."
+
+	found_by_email = gtd(users_ref.where('email', '==', pinner_email).get())
+	found_by_name = gtd(users_ref.where('name', '==', pinner_email).get())
+
+	if(len(found_by_name) or len(found_by_email)):
+		found_by_name[0].update({
+				"pinner_name":pinner_name,
+				"pinner_email":pinner_email
+			})
+		return "Pinner set!"
+
+	return "Pinner could not be found. Are you sure your pinner has signed up yet?"
+
+@app.route('/receive_connect', methods=['POST'])
+def receiveconnect():
+	data = request.form
+	connect_ref.document(ran_gen(8)).set({
+		        'email': data["email"],
+		        'name': data["name"],
+		        'last_name': data["surname"],
+		        'need':data["need"],
+		        'message':data["message"]
+		    })
+
+	return redirect('/')
+
+@app.route('/register')
+def register():
+	return render_template("register.html")
 
 @app.route('/access')
 def access():
-	# docs = users_ref.stream()
-	# for doc in docs:
-	#     print(u'{} => {}'.format(doc.id, doc.to_dict()))
 	if("user_info" in flask.session.keys()):
-		print("user coming in")
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
-		if(len(gtd(user.get()))):
-			password = gtd(user.get())[0]["password"]
-			return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password=password)
+		if(len(gtd(user.stream()))):
+			password = gtd(user.stream())[0]["password"]
+			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"])
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
-	        'name': flask.session["user_info"]["name"]
+	        'name': flask.session["user_info"]["name"],
+	        'school':email_to_school(flask.session["user_info"]["email"])
 	    })
-		return render_template("access.html", logged_in = True, user_info=flask.session["user_info"], password="You need to set a new password")
-	return render_template("access.html", logged_in = False)
-
+		return redirect('/register')
+	return redirect('/')
 
 @app.route('/auth/google')
 def auth():
@@ -103,7 +155,7 @@ def auth():
 @app.route('/changepass', methods=['POST'])
 def changepass():
 	if(request.method == 'POST'):
-		user_id = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).get())[0]["id"]
+		user_id = gtd(users_ref.where('email','==', flask.session["user_info"]["email"]).stream())[0]["id"]
 		users_ref.document(user_id).update({'password':request.json["pass"]})
 		return redirect("/access")
 	else:
@@ -113,14 +165,23 @@ def changepass():
 @app.route('/authenticate_with_unity', methods=['POST'])
 def authenticate_with_unity():
 	if(request.method == 'POST'):
-	
+
 		print("second line")
-		print(request.form)
+
 		data = request.form
-		user = gtd(users_ref.where('email','==', data["email"]).get())
+		user = gtd(users_ref.where('email','==', data["email"]).stream())
+
+		print(type(data["email"]))
+
 		if(len(user) != 0):
+			print("user")
+			print(gtd(users_ref.where('email','==', request.form["email"]).stream())[0])
 			user = user[0]
+			print("comparing passwords")
+			print(user["password"])
+			print(data["password"])
 			if(user["password"] == data["password"]):
+				print("right password")
 				return json.dumps({
 					"code":0,
 					"admin":(True if data["email"] in admins else False),
@@ -137,6 +198,7 @@ def authenticate_with_unity():
 			"name":""
 		})
 	else:
+		print("method not post")
 		return "sneaky sneaky"
 
 def credentials_to_dict(credentials):

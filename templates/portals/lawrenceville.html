@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nexus // Access Panel</title> <!-- plugins:css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='vendors/css/vendor.bundle.base.css')}}"> <!-- endinject -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/vertical-layout-dark/style.css')}}"> <!-- endinject -->
+  <link rel="shortcut icon" href="{{url_for('static',filename='img/logo/nexus-icon.png')}}" />
+  <style>
+    .btn-download-mac {
+      position: relative;
+      background: -webkit-gradient(linear, right top, left top, from(#EE7752), color-stop(#E73C7E), color-stop(#23A6D5), color-stop(#23D5AB), to(#EE7752));
+      background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
+      background-size: 400% 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.25em;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      -webkit-animation: Gradient 4s ease infinite;
+      animation: Gradient 4s ease infinite;
+      text-decoration: none;
+    }
+
+    .btn-download-windows {
+      position: relative;
+      background: -webkit-gradient(linear, right top, left top, from(#EE7752), color-stop(#23D5AB), color-stop(#23A6D5), color-stop(#E73C7E), to(#EE7752));
+      background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
+      background-size: 400% 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.25em;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      -webkit-animation: Gradient 4s ease infinite;
+      animation: Gradient 4s ease infinite;
+      text-decoration: none;
+    }
+
+    .btn-download div {
+      height: 100%;
+      background-color: #1d1d1d;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      color: black;
+      min-height: 40px;
+      padding: 0 1.618em;
+      border-radius: inherit;
+      background-size: inherit;
+      background-image: inherit;
+      -webkit-animation: Gradient 4s ease infinite;
+      animation: Gradient 4s ease infinite;
+      position: relative;
+      z-index: 1;
+      mix-blend-mode: overlay;
+      font-family: 'Helvetica Neue';
+
+    }
+
+    @-webkit-keyframes Gradient {
+      50% {
+        background-position: 140% 50%;
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+    }
+
+    @keyframes Gradient {
+      50% {
+        background-position: 140% 50%;
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+    }
+
+    .btn-download::after {
+      content: '';
+      position: absolute;
+      background-size: inherit;
+      background-image: inherit;
+      -webkit-animation: inherit;
+      animation: inherit;
+      left: 0px;
+      right: 0px;
+      top: 2px;
+      height: 100%;
+      -webkit-filter: blur(1rem);
+      filter: blur(1rem);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"> <a class="navbar-brand brand-logo mr-5" href="/"><img src="{{url_for('static',filename='img/logo/nexus-logo-white.svg')}}" class="mr-2"
+            alt="logo" /></a> <a class="navbar-brand brand-logo-mini" href="/"><img src="{{url_for('static',filename='img/logo/nexus-icon-white.svg')}}" alt="logo" /></a> </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"> <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize"> <span class="ti-layout-grid2"></span> </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon"> <span class="input-group-text" id="search"> <i class="ti-search"></i> </span> </div> <input type="text" class="form-control" id="navbar-search-input"
+                placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-settings d-none d-lg-flex"> <a class="nav-link" href="#"> <i class="ti-more"></i> </a> </li>
+        </ul> <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas"> <span class="ti-layout-grid2"></span> </button>
+      </div>
+    </nav> <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div id="right-sidebar" class="settings-panel"> <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item"> <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a> </li>
+          <li class="nav-item"> <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a> </li>
+        </ul>
+      </div> <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item"> <a class="nav-link" href="/"> <i class="ti-home menu-icon"></i> <span class="menu-title">Dashboard</span> </a> </li>
+        </ul>
+      </nav> <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-5 mb-4 mb-xl-0">
+                  <h4 class="font-weight-light col-12 " style="font-size: 40px;">Welcome, {{ user_info["name"] }}!</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pinner Selection</h4>
+                  <p class="card-description">
+                    Enter your pinner's information (full name and email) to grant pinning privileges in the Nexus Cloud™.
+                  </p>
+                  <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Steve Murray">
+
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Email Address</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" style="width: 220px;" placeholder="smurray@lawrenceville.org">
+                    </div>
+                    <div class="form-check mx-sm-4">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" checked="">
+                        Notify Pinner
+                        <i class="input-helper"></i></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2" onclick="sendPinner()">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Downloads</h4>
+                  <p class="card-description">The Nexus™ Cloud</p>
+                  <div class="template-demo">
+                    <div>
+                      <a class="btn btn-download btn-download-mac btn-block" href="https://the-nexus-cloud.s3.amazonaws.com/Nexus.dmg">
+                        <div>
+                          Nexus™ Cloud (Mac)
+                        </div>
+                      </a>
+                    </div>
+                    <div style="padding-top:5px;">
+                      <a class="btn btn-download btn-download-windows btn-block" href="https://the-nexus-cloud.s3.amazonaws.com/Nexus.dmg">
+                        <div>
+                          Nexus™ Cloud (Windows)
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between"> <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a href="http://www.thenexus.cloud/" target="_blank">Nexus</a>. All
+              rights reserved.</span> <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span> </div>
+        </footer> <!-- partial -->
+      </div> <!-- main-panel ends -->
+    </div> <!-- page-body-wrapper ends -->
+  </div> <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{{url_for('static',filename='vendors/js/vendor.bundle.base.js')}}"></script> <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="{{url_for('static',filename='vendors/chart.js/Chart.min.js')}}"></script> <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="{{url_for('static',filename='js/off-canvas.js')}}"></script>
+  <script src="{{url_for('static',filename='js/hoverable-collapse.js')}}"></script>
+  <script src="{{url_for('static',filename='js/template.js')}}"></script>
+  <script src="{{url_for('static',filename='js/settings.js')}}"></script>
+  <script src="{{url_for('static',filename='js/todolist.js')}}"></script> <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{{url_for('static',filename='js/dashboard.js')}}"></script> <!-- End custom js for this page-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+function sendPinner(){
+    pinner_email = document.getElementById("inlineFormInputGroupUsername2").value;
+    pinner_name = document.getElementById("inlineFormInputName2").value;
+    axios({
+      method:'post',
+      url:'/set_pinner',
+      data:{
+        pinner_email:pinner_email,
+        pinner_name:pinner_name
+      }
+    }).catch(e=>console.log(e)).then(data => {alert(data["data"]); window.location.reload();})
+    return false;
+  }
+
+</script>
+
+</html>
