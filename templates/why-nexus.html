@@ -7,8 +7,8 @@
   <title>Nexus // Virtual Events</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Favicon -->
-  <link rel="shortcut icon" href="{{url_for('static',filename='img/icons/nexus-icon.png')}}" type="image/x-icon">
-  <link rel="apple-touch-icon" href="{{url_for('static',filename='img/icons/nexus-icon.png')}}"> <!-- Plugins -->
+  <link rel="shortcut icon" href="{{url_for('static',filename='img/favicon.ico')}}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{url_for('static',filename='img/icon.png')}}"> <!-- Plugins -->
   <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{url_for('static',filename='css/revoulation.css')}}">
   <link rel="stylesheet" href="{{url_for('static',filename='css/plugins.css')}}"> <!-- Style Css -->
@@ -39,13 +39,13 @@
             <div class="header__wrapper mr--0">
               <!-- Header Left -->
               <div class="header-left flex-20">
-                <div class="logo"> <a href="{{url_for('static',filename='index.html')}}"> <img src="{{url_for('static',filename='img/logo/nexus-logo-white.png')}}" alt="Brook Images"> </a> </div>
+                <div class="logo"> <a href="{{url_for('static',filename='index.html')}}"> <img src="{{url_for('static',filename='img/logo/nexus-logo-small.png')}}" alt="Brook Images"> </a> </div>
               </div> <!-- Mainmenu Wrap -->
               <div class="header-flex-right flex-80">
                 <div class="mainmenu-wrapper have-not-flex d-none d-lg-block">
                   <nav class="page_nav">
                     <ul class="mainmenu">
-                      <li class="lavel-1 slide--megamenu"><a href="/"><span style="font-family: Roboto; font-weight: 200;">Blog</span></a> <!-- Start Mega Menu -->
+                      <li class="lavel-1 slide--megamenu"><a href="#"><span style="font-family: Roboto; font-weight: 200;">Blog</span></a> <!-- Start Mega Menu -->
                       </li>
                       <li class="lavel-1 slide--megamenu"><a href="/connect"><span style="font-family: Roboto; font-weight: 200;">Connect</span></a> <!-- Start Mega Menu -->
                       </li>
@@ -54,6 +54,8 @@
                       {% else %}
                       <li class="lavel-1 slide--megamenu"><a href="/auth/google"><span style="font-family: Roboto; font-weight: 200;">Login</span></a> <!-- Start Mega Menu -->
                       {% endif %}
+                      </li>
+                      <li class="lavel-1 slide--megamenu"><a href="/index"><span style="font-family: Roboto; font-weight: 200;">Home</span></a> <!-- Start Mega Menu -->
                       </li>
                     </ul>
                   </nav>
@@ -315,33 +317,31 @@
       </div>
     </div> <!-- End Brook Search Popup -->
     <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
+
+
+
+
     <div class="slider-revoluation poss_relative">
       <div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
         <ul>
           <!-- SLIDE -->
           <li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
             data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-            <!-- MAIN IMAGE --> <img src="{{url_for('static',filename='img/bg/bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+            <!-- MAIN IMAGE --> <img src="{{url_for('static',filename='img/bg/prev6.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
             <!-- LAYERS -->
             <!-- LAYER NR. 1 -->
             <div class="tp-caption " id="slide-7-layer-11" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-220','-220','-220','-220']" data-width="130"
-              data-height="130" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off"
+              data-height="100" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off"
               data-frames='[{"delay":300,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
               data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 5; min-width: 130px; max-width: 130px; max-width: 130px; max-width: 130px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
-              <!-- Start Single Popup -->
-              <div class="video-btn-2"> <a class="play__btn" href="https://www.youtube.com/watch?v=Wwkk3cgOOI8">
-                  <div class="icon-gradient color-pink">
-                    <div class="video-icon"></div>
-                  </div>
-                </a> </div> <!-- End Single Popup -->
+              style="z-index: 5; min-width: 100px; max-width: 100px; max-width: 100px; max-width: 100px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
             </div> <!-- LAYER NR. 2 -->
             <div class="tp-caption creative-agency-heading" id="slide-7-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','1','1']" data-y="['middle','middle','middle','middle']" data-voffset="['-52','-52','-50','-50']"
               data-fontsize="['120','100','80','60']" data-lineheight="['146','122','98','74']" data-width="['none','none','400','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text"
               data-responsive_offset="off" data-responsive="off"
               data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
               data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 6; white-space: nowrap; font-size: 120px; line-height: 146px; font-family: Roboto; font-weight: 200; color: #ffffff; letter-spacing: 0px">Nexus <span class="secondary-font" style="font-style: italic;">Reality</span> </div>
+              style="z-index: 6; white-space: nowrap; font-size: 120px; line-height: 146px; font-family: Roboto; font-weight: 200; color: #ffffff; letter-spacing: 0px">Why <span class="secondary-font" style="font-style: italic;">Nexus?</span> </div>
             <!-- LAYER NR. 3 -->
             <div class="tp-caption " id="slide-7-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['54','54','70','50']" data-width="none"
               data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="off" data-responsive="off"
@@ -352,7 +352,7 @@
               data-fontsize="['18','18','18','16']" data-lineheight="['30','30','30','27']" data-width="['570','570','400','360']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off"
               data-frames='[{"delay":900,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
               data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-              style="z-index: 8; min-width: 570px; max-width: 570px; white-space: normal; font-size: 18px; font-family: Roboto; line-height: 30px; font-weight: 100; color: #ffffff; letter-spacing: 0px;">Gatherings, reinvented. — Your portal to a nexus of virtual events.</i></div> <!-- LAYER NR. 5 --> <a class="tp-caption smooth-scroll-link" href="#section-about" target="_self" id="slide-7-layer-7" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+              style="z-index: 8; min-width: 570px; max-width: 570px; white-space: normal; font-size: 18px; font-family: Roboto; line-height: 30px; font-weight: 100; color: #ffffff; letter-spacing: 0px;"> </i></div> <!-- LAYER NR. 5 --> <a class="tp-caption smooth-scroll-link" href="#section-about" target="_self" id="slide-7-layer-7" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
               data-y="['bottom','bottom','bottom','bottom']" data-voffset="['110','110','50','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-actions='' data-basealign="slide" data-responsive_offset="off"
               data-responsive="off" data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
               data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;text-decoration: none;">
@@ -381,385 +381,467 @@
       </div>
     </div> <!-- END REVOLUTION SLIDER -->
     <!-- Page Conttent -->
-    <main class="page-content">
-      <!-- Start About Area -->
-      <div class="bk-about-area section-ptb-100" id="section-about">
-        <div class="container">
-          <div class="row about--creative align-items-center">
-            <div class="col-lg-6 col-md-12 col-12">
-              <div class="thumb text-left text-lg-left wow move-up"> <img src="{{url_for('static',filename='img/about/image.png')}}" alt="about images"> </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--40">
-              <div class="content pl--80 pl_md--5 pl_sm--5">
-                <div class="title--creative wow move-up">
-                  <h3 class="heading">our mission</h3>
-                  <h2>A virtual alternative to <span class="theme-creative">physical community events.</span></h2>
-                </div>
-                <p class="wow move-up">Nexus is an immersive, cross-platform, multiplayer, role-playing application framework that provides the users with a virtual community-event experience. With the outbreak of the novel coronavirus, social-distancing regulations have widely been enforced throughout the world. As a result, institutions have been forced to close down their physical establishments, canceling many events their communities have looked forward to attending. Our goal is to provide a virtual alternative to physical location-based events, e.g. the end-of-year graduation ceremony experience for high-school seniors while upholding health regulations and our collective social responsibilities. </p> <a class="about-btn wow move-up" href="#"><span>More Details</span><i
-                    class="fa fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End About Area -->
-      <!-- Start Service Area -->
-      <!-- Our Technology  -->
-      <div class="bk-about-area section-ptb-100" id="section-about">
-        <div class="container">
-          <div class="row about--creative align-items-center">
-            <div class="col-lg-6 col-md-12 col-12 mt_md--40 mt_sm--40">
-              <div class="content pl--80 pl_md--5 pl_sm--5">
-                <div class="title--creative wow move-up">
-                  <h3 class="heading">our technology</h3>
-                  <h2>Stunning, life-like simulations <span class="theme-creative">powered by Google Maps & Unity.</span></h2>
-                </div>
-                <p class="wow move-up">Nexus offers a secure, administrator-regulated platform to host customized events based in a three-dimensional world. The application is optimized to perform well across a broad spectrum of devices with enhanced visual fidelity to look as realistic as possible utilizing the Unity3D game engine's High Definition Render Pipeline (HDRP). Our platform is powered by Google Maps to create stunning, life-like representations of real-world locations. With customizable avatars, based in an immersive experience enhanced with a spatial sound system to allow live, realtime voice communication and interaction with other players.</p> <a class="about-btn wow move-up" href="#"><span>More Details</span><i
-                    class="fa fa-arrow-right"></i></a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-12">
-              <div class="thumb text-left text-lg-left wow move-up"> <img src="{{url_for('static',filename='img/about/image.png')}}" alt="about images"> </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End About Area -->
-      <!-- Our technology -->
+    <div class="slider-revoluation">
+            <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_6_1_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="home-start-ups" data-source="gallery" style="margin: 0px auto; background: transparent; padding: 0px; position: absolute; overflow: visible; height: 700px; width: 1064px; left: 0px;">
+                <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
+                <div id="rev_slider_6_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" style="max-height: 1000px; margin-top: 0px; margin-bottom: 0px; height: 700px;" data-version="5.4.7" data-slideactive="rs-12">
+                    <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+                        <!-- SLIDE  -->
+                        <li data-index="rs-12" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+                            <!-- MAIN IMAGE -->
+                            <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="img/bg/prev6.jpg" alt="" data-bgposition="left center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;img/bg/prev6.jpg&quot;); background-size: cover; background-position: left center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="img/bg/prev6.jpg"></div></div>
+                            <!-- LAYERS -->
 
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 417px; top: 204px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption   tp-resizeme" id="slide-12-layer-5" data-x="['center','center','center','center']" data-hoffset="['280','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 10px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><img src="prev6.jpg" alt="" data-ww="['941px','536px','349px','349px']" data-hh="['830px','473px','308px','308px']" data-no-retina="" style="width: 562.485px; height: 496.135px; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 10px;">
+                            </div></div></div></div>
 
-      <div class="bk-service-area section-pb-120">
-        <div class="container">
-          <div class="row">
-            <!-- Start Single Service -->
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12 wow move-up">
-              <div class="service service--2">
-                <div class="thumb"> <center> <img src="{{url_for('static',filename='img/service/icon1new copy.png')}}" alt="images" width="115" height="115"> </center> </div>
-                <div class="content" style="text-align: center">
-                  <h4>Realtime Multiplayer</h4>
-                  <p>Our platform is equpied with a spacial sound system to allow live, real voice communication and interaction with other players.</p>
-                </div>
-              </div>
-            </div> <!-- End Single Service -->
-            <!-- Start Single Service -->
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12 wow move-up mt_mobile--40">
-              <div class="service service--2">
-                <div class="thumb"> <center> <img src="{{url_for('static',filename='img/service/icon3 new copy.png')}}" alt="images" width="115" height="115"> </center> </div>
-                <div class="content" style="text-align: center">
-                  <h4>Customizable Avatars</h4>
-                  <p>Nexus provides customizable avatars with a large selection of items to choose froms.</p>
-                </div>
-              </div>
-            </div> <!-- End Single Service -->
-            <!-- Start Single Service -->
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12 wow move-up mt_sm--40">
-              <div class="service service--2">
-                <div class="thumb"> <center> <img src="{{url_for('static',filename='img/service/icon2new.png')}}" alt="images" width="115" height="115"> </center> </div>
-                <div class="content" style="text-align: center">
-                  <h4>Google Maps Integration</h4>
-                  <p>Nexus uses 3D Terrain Models imported from Google Maps.</p>
-                </div>
-              </div>
-            </div> <!-- End Single Service -->
-          </div>
-        </div>
-      </div> <!-- End Service Area -->
-      <!-- Start Portfolio Area -->
-      <div class="bk-portfolio-area creative-portfolio section-pb-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title--between wow move-up">
-                <div class="title">
-                  <h3> Featured <span class="theme-creative">Projects</span></h3>
-                </div>
-              <!-->  <div class="section-btn mt_mobile--30"> <a class="button-text" href="#"><span>View all projects</span><i class="fa fa-arrow-right"></i></a> </div> <-->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-wrapper mt--40 wow move-up">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="porfolio-swip-horizontal" style="overflow: hidden;">
-                  <div class="swiper-wrapper">
-                    <!-- Start Single Portfolio -->
-                    <div class="portfolio portfolio_style--2 mt--30 swiper-slide">
-                      <div class="thumb"> <img src="{{url_for('static',filename='img/portfolio/portfolio-2/lawrenceville.jpg')}}" alt="Portfolio Images"> </div>
-                      <div class="portfolio-overlay"></div>
-                      <div class="port-overlay-info">
-                        <div class="content">
-                          <h3 class="port-title" style="font-family: Roboto; font-weight: 200;">The Virtual Villeage</h3>
-                          <div class="category" style="font-family: Roboto; font-weight: 200;">The Lawrenceville School</div>
-                        </div>
-                      </div>
-                    </div> <!-- End Single Portfolio -->
-                    <!-- Start Single Portfolio -->
-                    <div class="portfolio portfolio_style--2 mt--30 swiper-slide">
-                      <div class="thumb"> <img src="{{url_for('static',filename='img/portfolio/portfolio-2/portfolio-02.jpg')}}" alt="Portfolio Images"> </div>
-                      <div class="portfolio-overlay"></div>
-                      <div class="port-overlay-info">
-                        <div class="content">
-                          <h3 class="port-title" style="font-family: Roboto; font-weight: 200;">The Virtual Villeage</h3>
-                          <div class="category" style="font-family: Roboto; font-weight: 200;">The Lawrenceville School</div>
-                        </div>
-                      </div>
-                    </div> <!-- End Single Portfolio -->
-                    <!-- Start Single Portfolio -->
-                    <div class="portfolio portfolio_style--2 mt--30 swiper-slide">
-                      <div class="thumb"> <img src="{{url_for('static',filename='img/portfolio/portfolio-2/portfolio-03.jpg')}}" alt="Portfolio Images"> </div>
-                      <div class="portfolio-overlay"></div>
-                      <div class="port-overlay-info">
-                        <div class="content">
-                          <h3 class="port-title" style="font-family: Roboto; font-weight: 200;">The Virtual Villeage</h3>
-                          <div class="category" style="font-family: Roboto; font-weight: 200;">The Lawrenceville School</div>
-                        </div>
-                      </div>
-                    </div> <!-- End Single Portfolio -->
-                    <!-- Start Single Portfolio -->
-                    <div class="portfolio portfolio_style--2 mt--30 swiper-slide">
-                      <div class="thumb"> <img src="{{url_for('static',filename='img/portfolio/portfolio-2/portfolio-04.jpg')}}" alt="Portfolio Images"> </div>
-                      <div class="portfolio-overlay"></div>
-                      <div class="port-overlay-info">
-                        <div class="content">
-                          <h3 class="port-title" style="font-family: Roboto; font-weight: 200;">The Virtual Villeage</h3>
-                          <div class="category" style="font-family: Roboto; font-weight: 200;">The Lawrenceville School</div>
-                        </div>
-                      </div>
-                    </div> <!-- End Single Portfolio -->
-                    <!-- Start Single Portfolio -->
-                    <div class="portfolio portfolio_style--2 mt--30 swiper-slide">
-                      <div class="thumb"> <img src="{{url_for('static',filename='img/portfolio/portfolio-2/portfolio-05.jpg')}}" alt="Portfolio Images"> </div>
-                      <div class="portfolio-overlay"></div>
-                      <div class="port-overlay-info">
-                        <div class="content">
-                          <h3 class="port-title" style="font-family: Roboto; font-weight: 200;">The Virtual Villeage</h3>
-                          <div class="category" style="font-family: Roboto; font-weight: 200;">The Lawrenceville School</div>
-                        </div>
-                      </div>
-                    </div> <!-- End Single Portfolio -->
-                    <!-- Start Single Portfolio -->
-                    <div class="portfolio portfolio_style--2 mt--30 swiper-slide">
-                      <div class="thumb"> <img src="{{url_for('static',filename='img/portfolio/portfolio-2/portfolio-06.jpg')}}" alt="Portfolio Images"> </div>
-                      <div class="portfolio-overlay"></div>
-                      <div class="port-overlay-info">
-                        <div class="content">
-                          <h3 class="port-title" style="font-family: Roboto; font-weight: 200;">The Virtual Villeage</h3>
-                          <div class="category" style="font-family: Roboto; font-weight: 200;">The Lawrenceville School</div>
-                        </div>
-                      </div>
-                    </div> <!-- End Single Portfolio -->
-                  </div> <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Portfolio Area -->
-      <!-- Start CounterUp Area -->
-      <div class="bk-number-speaks section-ptb-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-12">
-              <div class="number-speaks-wrapper">
-                <div class="content wow move-up">
-                  <div class="title--creative text-left">
-                    <h3 class="heading">NUMBER SPEAKS</h3>
-                    <h2>Always ready <br> for <span class="theme-creative">a challenge.</span></h2>
-                    <p>Nothing is more important than having a <br> desire deep down to achieve goals.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 col-12 mt_md--40 mt_sm--40">
-              <div class="speakers-number-wrap counter-grid">
-                <!-- Start Single Count -->
-                <div class="counter-style--2 wow move-up">
-                  <div class="icon"> <i class="ion-ios-eye-outline"></i> </div> <span class="count">1</span>
-                  <div class="content">
-                    <h6>Unique designs</h6>
-                  </div>
-                </div> <!-- End Single Count -->
-                <!-- Start Single Count -->
-                <div class="counter-style--2 wow move-up">
-                  <div class="icon"> <i class="ion-ios-filing-outline"></i> </div> <span class="count">1</span>
-                  <div class="content">
-                    <h6>Completed projects</h6>
-                  </div>
-                </div> <!-- End Single Count -->
-                <!-- Start Single Count -->
-                <div class="counter-style--2 wow move-up">
-                  <div class="icon"> <i class="ion-ios-home-outline"></i> </div> <span class="count">1</span>
-                  <div class="content">
-                    <h6>Global partners</h6>
-                  </div>
-                </div> <!-- End Single Count -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End CounterUp Area -->
-      <!-- Start Testimonial Area -->
-      <div class="brook-testimonial-area ptb--100 ptb-md--80 ptb-sm--60 bg_image--5 slick-arrow-hover">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="testimonial-wrapper testimonial-active--single--arrow wow move-up">
-                <div class="testimonial-container pb--30">
-                  <!-- Start Single Testimonial -->
-                  <div class="testimonial testimonial--creative">
-                    <div class="brook-element-carousel nav-thumb testimonial-fixed-width testimonial-nav-style"
-                      data-slick-options='{ "spaceBetween": 15, "slidesToShow": 3, "slidesToScroll": 1, "arrows": false, "infinite": true, "centerMode":true, "dot": false, "focusOnSelect": true, "asNavFor": ".nav-content" }'
-                      data-slick-responsive='[ {"breakpoint":770, "settings": {"slidesToShow": 3}}, {"breakpoint":577, "settings": {"slidesToShow": 3}}, {"breakpoint":575, "settings": {"slidesToShow": 1}} ]'>
-                      <!-- Start Single Thumb -->
-                      <div class="clint-thumb"> <img src="{{url_for('static',filename='img/testimonial/clint-3/avata-01.png')}}" alt="testimonial images"> </div> <!-- Start Single Thumb -->
-                      <div class="clint-thumb"> <img src="{{url_for('static',filename='img/testimonial/clint-3/avata-02.png')}}" alt="testimonial images"> </div> <!-- Start Single Thumb -->
-                      <div class="clint-thumb"> <img src="{{url_for('static',filename='img/testimonial/clint-3/avata-03.png')}}" alt="testimonial images"> </div> <!-- Start Single Thumb -->
-                      <div class="clint-thumb"> <img src="{{url_for('static',filename='img/testimonial/clint-3/avata-01.png')}}" alt="testimonial images"> </div>
-                    </div>
-                    <div class="brook-element-carousel nav-content slick-arrow-center slick-dots-bottom testimonial-nav-content"
-                      data-slick-options='{ "spaceBetween": 15, "slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "infinite": true, "dots": false, "focusOnSelect": true, "asNavFor": ".nav-thumb", "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "fas fa-angle-left" }, "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "fas fa-angle-right" } }'
-                      data-slick-responsive='[ {"breakpoint":768, "settings": {"slidesToShow": 1}}, {"breakpoint":577, "settings": {"slidesToShow": 1}}, {"breakpoint":481, "settings": {"slidesToShow": 1}} ]'>
-                      <!-- Start Single COntent -->
-                      <div class="testimonial-nav">
-                        <div class="content">
-                          <p>Design is intelligence made visible.</p>
-                          <ul class="rating d-flex justify-content-center">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <div class="testimonial-info">
-                            <div class="clint-info">
-                              <h6>Alina Wheeler</h6> <span>- writer</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div> <!-- End Single COntent -->
-                      <!-- Start Single COntent -->
-                      <div class="testimonial-nav">
-                        <div class="content">
-                          <p>Nipa You can’t succeed if you just do what others do and follow the well-worn path. You need to create a new and original path for yourself.</p>
-                          <ul class="rating d-flex justify-content-center">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <div class="testimonial-info">
-                            <div class="clint-info">
-                              <h6>Harley Mills</h6> <span>- PR Officer</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div> <!-- End Single COntent -->
-                      <!-- Start Single COntent -->
-                      <div class="testimonial-nav">
-                        <div class="content">
-                          <p>Designing is not intended for talented people. It’s for everyone. What you need to do is just to open up your mind to all possibilities.</p>
-                          <ul class="rating d-flex justify-content-center">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <div class="testimonial-info">
-                            <div class="clint-info">
-                              <h6>Harley Mills</h6> <span>- PR Officer</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div> <!-- End Single COntent -->
-                      <!-- Start Single COntent -->
-                      <div class="testimonial-nav">
-                        <div class="content">
-                          <p>Never stop learning. Consider yourself as a life-long learner and try your best to learn as much as you can, you definitely will succeed.</p>
-                          <ul class="rating d-flex justify-content-center">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <div class="testimonial-info">
-                            <div class="clint-info">
-                              <h6>Harley Mills</h6> <span>- PR Officer</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div> <!-- End Single COntent -->
-                    </div>
-                  </div> <!-- End Single Testimonial -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Testimonial Area -->
-      <!-- Start Blog Area -->
-      <div class="bk-blog-area section-ptb-120 clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title--between wow move-up">
-                <div class="title">
-                  <h3>Blog <span class="theme-creative">Updates</span></h3>
-                </div>
-                <div class="section-btn mt_mobile--30"> <a class="button-text" href="#"><span>View all posts</span><i class="fa fa-arrow-right"></i></a> </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt--40">
-            <div class="col-lg-6 col-xl-3 col-md-6 col-sm-6 col-12 wow move-up mt--30">
-              <div class="blog blog-style--2 creative--blog">
-                <!-- Swip Slide -->
-                <div class="thumb blog-slick-initial poss_relative"> <a href="{{url_for('static',filename='blog-details.html')}}"><img src="{{url_for('static',filename='img/blog/blog-2/blog-1.jpg')}}" alt="Blog Images"></a> <a
-                    href="{{url_for('static',filename='blog-details.html')}}"><img src="{{url_for('static',filename='img/blog/blog-2/blog-3.jpg')}}" alt="Blog Images"></a> <a href="{{url_for('static',filename='blog-details.html')}}"><img
-                      src="{{url_for('static',filename='img/blog/blog-2/blog-4.jpg')}}" alt="Blog Images"></a> </div>
-                <div class="blog-content">
-                  <div class="content">
-                    <h3 class="the-title"><a href="{{url_for('static',filename='blog-details.html')}}">The social impact of coronavirus</a></h3>
-                    <ul class="meta">
-                      <li>January 7, 2018</li>
-                      <li><a href="#">Photography</a></li>
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 80px; top: 159px; z-index: 6;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption  " id="slide-12-layer-6" data-x="['left','center','center','center']" data-hoffset="['80','0','0','0']" data-y="['middle','top','top','top']" data-voffset="['-114','100','100','100']" data-fontsize="['55','47','39','31']" data-lineheight="['77','66','55','44']" data-width="['500','430','360','300']" data-height="['none','133','none','89']" data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; min-width: 500px; max-width: 500px; white-space: normal; font-size: 55px; line-height: 77px; font-family: Roboto; font-weight: 600; color: rgb(255, 255, 255); letter-spacing: 0px; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; max-height: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">result-driven
+                                creative agency. </div></div></div></div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 80px; top: 342px; z-index: 7;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption  startups-pra" id="slide-12-layer-7" data-x="['left','center','center','center']" data-hoffset="['80','0','0','0']" data-y="['middle','top','top','top']" data-voffset="['33','260','240','240']" data-fontsize="['20','20','18','16']" data-lineheight="['40','40','36','32']" data-width="['500','500','400','500']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:900,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 2000px; max-width: 500px; white-space: normal; font-size: 20px; line-height: 40px; font-weight: 500; color: rgb(153, 153, 153); letter-spacing: 0px; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; max-height: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"> Nexus' goal is to provide a virtual alternative to physical location-based community events through an online, event-centric, location-simulating, multiplayer role-playing application that provides users with a virtual community-event experience, while upholding health regulations and our collective social responsibilities. Our profits are directly donated to multiple COVID-19 relief efforts.</div></div></div></div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 80px; top: 476px; z-index: 8;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption rev-btn  rs-hover-ready rs-toggle-content-active" id="slide-12-layer-8" data-x="['left','center','center','center']" data-hoffset="['80','0','0','0']" data-y="['middle','top','top','top']" data-voffset="['157','380','360','360']" data-width="182" data-height="62" data-whitespace="nowrap" data-type="button" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:1400,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;frame&quot;:&quot;hover&quot;,&quot;speed&quot;:&quot;0&quot;,&quot;ease&quot;:&quot;Linear.easeNone&quot;,&quot;to&quot;:&quot;o:1;rX:0;rY:0;rZ:0;z:0;&quot;,&quot;style&quot;:&quot;c:rgb(248,164,64);bg:rgba(248,164,64,0);&quot;}]"  </div></div></div></div>
+                        </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-            </div> <!-- End Single Portfolio -->
-            <!-- COPY PASTE REST OF BLOG -->
-
-            -~>
-          </div>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important; width: 0%;"></div>
+                <div class="tp-loader spinner3"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>
+            </div><div class="tp-fullwidth-forcer" style="width: 100%; height: 700px;"></div></div>
+            <!-- END REVOLUTION SLIDER -->
         </div>
-      </div> <!-- End Blog Area -->
 
-      <!-- Start Row Columns Area -->
-      <div class="firefly brook-row-column-area clearfix">
-        <div class="aaa creative-gradient--1 ptb--150">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="call-to-action callto-action--1">
-                  <div class="content">
-                    <h6>Host your events in no time</h6>
-                    <h3>Ready to enjoy <span>a virtual event ?</span></h3>
-                    <form action="/connect">
-                      <button><span>Contact us</span><i class="fa fa-arrow-right"></i></button>
-                    </form>
-                  </div>
+
+
+    <main class="page-content">
+
+
+                <main class="page-content">
+
+            <!-- Start Service Area -->
+            <div class="brook-service-area bg_color--31">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-xl-7 col-12">
+                        <div class="row startupservice-wrapper">
+
+                            <!-- Strat Single Speach -->
+                            <div class="col-lg-6">
+                                <div class="single-motive-speach text-white">
+                                    <div class="icon">
+                                        <i class="icon-basic-globe"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Digital marketing</h4>
+                                        <p>We conduct the marketing of products &amp; services using latest digital
+                                            technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Speach -->
+
+                            <!-- Strat Single Speach -->
+                            <div class="col-lg-6">
+                                <div class="single-motive-speach text-white mt_md--40 mt_sm--40">
+                                    <div class="icon">
+                                        <i class="ion-monitor"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4>UI/UX designs</h4>
+                                        <p>We conduct the marketing of products &amp; services using latest digital
+                                            technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Speach -->
+
+                            <!-- Strat Single Speach -->
+                            <div class="col-lg-6">
+                                <div class="single-motive-speach text-white mt--40">
+                                    <div class="icon">
+                                        <i class="ion-ios-baseball-outline"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4>SEO marketing</h4>
+                                        <p>We conduct the marketing of products &amp; services using latest digital
+                                            technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Speach -->
+
+                            <!-- Strat Single Speach -->
+                            <div class="col-lg-6">
+                                <div class="single-motive-speach text-white mt--40">
+                                    <div class="icon">
+                                        <i class="ion-pinpoint"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Resource use</h4>
+                                        <p>We conduct the marketing of products &amp; services using latest digital
+                                            technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Speach -->
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-5 col-12">
+                        <div class="clint-succeed bg_image--24 ptb--220 ptb-md--80 ptb-lg--80 ptb_lp--130 ptb-sm--60" data-black-overlay="9">
+                            <div class="row align-items-center plr_md--40 plr_sm--40">
+                                <div class="col-lg-4">
+                                    <!-- Start Single Popup -->
+                                    <div class="video-btn">
+                                        <a class="play__btn" href="https://www.youtube.com/watch?v=9No-FiEInLA">
+                                            <div class="video-icon second-icon yellow-color-2"></div>
+                                        </a>
+                                    </div>
+                                    <!-- End Single Popup -->
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="content pr--30 pr_sm--0">
+                                        <h3 class="heading heading-h3 font-32 text-white line-height-1-88">We help our
+                                            clients succeed by delivering products that improve life, work and play.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div> <!-- End Row Columns Area -->
-    </main>
-    <!--// Page Conttent -->
+            <!-- End Service Area -->
+
+            <!-- Start What We Do Area -->
+            <div class="brook-what-do-area ptb--160 ptb-md--80 ptb-sm--60 bg_color--1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-2">
+                            <div class="brook-section-title wow move-up animate" style="visibility: visible; opacity: 0;">
+                                <h5 class="heading heading-h5 pink-color-2">What we do</h5>
+                                <div class="bkseparator--30"></div>
+                                <h3 class="heading heading-h3 line-height-1-42">Effective solution <br> for every
+                                    businesses</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start What Do Inner -->
+                    <div class="row mt--20 mt_sm--5 mt_md--5">
+                        <div class="col-lg-2">
+                            <div class="what-do mt--40 mt_md--20 mt_sm--5">
+                                <div class="basic-separator line-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="what-do mt--40">
+                                <div class="content">
+                                    <h5 class="heading heading-h5 yellow-color-2 wow move-up animate" style="visibility: visible; opacity: 0;">Fresh ideas</h5>
+                                    <div class="bkseparator--20"></div>
+                                    <p class="bk_pra wow move-up animate" style="visibility: visible; opacity: 0;">Brook presents your services with flexible,
+                                        convenient and multipurpose layouts. You can select your favorite layouts &amp;
+                                        elements for particular projects with unlimited customization possibilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1">
+                            <div class="what-do mt--40">
+                                <div class="content">
+                                    <h5 class="heading heading-h5 yellow-color-2 wow move-up animate" style="visibility: visible; opacity: 0;">Unique designs</h5>
+                                    <div class="bkseparator--20"></div>
+                                    <p class="bk_pra wow move-up animate" style="visibility: visible; opacity: 0;">Pixel-perfect replication of the designers is
+                                        intended for both front-end &amp; back-end developers to build their pages with
+                                        greater comfort thanks to the higher custom ability as well as flexibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End What Do Inner -->
+                </div>
+            </div>
+            <!-- End What We Do Area -->
+
+            <!-- Start Video Popup Area -->
+            <div class="brook-video-area bg_color--1 pb--130 pb_md--80 pb_sm--60 bg-as-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-12">
+                            <div class="video-with-thumb text-center move-up wow animate" style="visibility: visible; opacity: 0;">
+                                <div class="thumb">
+                                    <img src="img/others/pic1.png" alt="video images">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-12 mt_md--40 mt_sm--40">
+                            <div class="video-content move-up wow animate" style="visibility: visible; opacity: 0;">
+                                <h3 class="heading heading-h3 line-height-1-42">Effective solution <br> for every
+                                    businesses</h3>
+                                <div class="bkseparator--25"></div>
+                                <p class="bk_pra">Brook presents your services with flexible, convenient and
+                                    multipurpose layouts. You can select your favorite layouts &amp; elements for
+                                    particular projects with unlimited customization possibilities.</p>
+                                <div class="bkseparator--40"></div>
+                                <a class="moredetails-btn yellow-color-2" href="#"><span>More details</span> <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Video Popup Area -->
+
+            <!-- Start Brand Stratagy Area -->
+            <div class="brook-stratagy-area bg_color--7">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="bk-stratagy-content max-width--600 float-right pt--120 pb--120 pr--160 pr_lg--30 pl_lg--30 pr_md--50 pl_md--50 pr_sm--30 pl_sm--30">
+                            <div class="content">
+                                <h3 class="heading heading-h3 line-height-1-42 yellow-color-2 wow move-up text-white animate" style="visibility: hidden; animation-name: none; opacity: 0;">Brand
+                                    strategy and digital creation.</h3>
+                                <div class="bkseparator--30"></div>
+                                <p class="bk_pra font-16 line-height-1-87 pr--30 wow move-up text-white animate" style="visibility: hidden; animation-name: none; opacity: 0;">Our quality of service
+                                    assessment involves controlling and managing resources to ensure customers'
+                                    satisfaction.</p>
+                                <div class="bkseparator--40"></div>
+
+                                <!-- Start Single List -->
+                                <div class="bk-list--2 wow move-up animate" style="visibility: hidden; animation-name: none; opacity: 0;">
+                                    <div class="list-header with-ckeck check-yellow-color-2">
+                                        <div class="marker"></div>
+                                        <div class="title-wrap">
+                                            <h6 class="heading heading-h5 text-white">Business Architecture</h6>
+                                        </div>
+                                    </div>
+                                    <div class="list-header with-ckeck check-yellow-color-2">
+                                        <div class="marker"></div>
+                                        <div class="title-wrap">
+                                            <h6 class="heading heading-h5 text-white">Cognitive Architecture</h6>
+                                        </div>
+                                    </div>
+                                    <div class="list-header with-ckeck check-yellow-color-2">
+                                        <div class="marker"></div>
+                                        <div class="title-wrap">
+                                            <h6 class="heading heading-h5 text-white">Interior Architecture</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-header with-ckeck check-yellow-color-2">
+                                        <div class="marker"></div>
+                                        <div class="title-wrap">
+                                            <h6 class="heading heading-h5 text-white">Landscape Architecture</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-header with-ckeck check-yellow-color-2">
+                                        <div class="marker"></div>
+                                        <div class="title-wrap">
+                                            <h6 class="heading heading-h5 text-white">UI/UX designs</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single List -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bk-stratagy-thumb bg_image--25 ptb--180 h-100">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Brand Stratagy Area -->
+
+            <!-- Start Portfolio Caption -->
+            <div class="bk-portfolio-with-caption-area pt--150 pt_md--80 pt_sm--60 pb--80 pb_md--50 pb_sm--30 bg_color--1 poss_relative bk-masonary-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="brook-section-title text-center mb--60">
+                                <h3 class="heading heading-h3">Our featured works</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="messonry-button text-center mb--70">
+                                <button data-filter="*" class="is-checked"><span class="filter-text">All</span><span class="filter-counter">6</span></button>
+                                <button data-filter=".cat--1"><span class="filter-text">Creative</span> <span class="filter-counter">3</span></button>
+                                <button data-filter=".cat--2"><span class="filter-text">Design</span> <span class="filter-counter">2</span></button>
+                                <button data-filter=".cat--3"><span class="filter-text">Digital</span> <span class="filter-counter">4</span></button>
+                                <button data-filter=".cat--4"><span class="filter-text">Photography</span> <span class="filter-counter">5</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portfolio-grid-metro6 mesonry-list" style="position: relative; height: 714.5px;">
+
+                                <div class="resizer" style="position: absolute; left: 0%; top: 0px;"></div>
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-33-33 cat--1 cat--4" style="position: absolute; left: 0%; top: 0px;">
+                                    <div class="portfolio with-caption">
+                                        <div class="thumb video-with-thumb">
+                                            <a href="portfolio-details.html">
+                                                <img src="img/portfolio/grid/caption-1.jpg" alt="portfolio images">
+                                            </a>
+
+                                            <!-- Start Single Popup -->
+                                            <div class="video-btn position--center">
+                                                <a class="play__btn" href="https://www.youtube.com/watch?v=9No-FiEInLA">
+                                                    <div class="video-icon yellow-color-2"></div>
+                                                </a>
+                                            </div>
+                                            <!-- End Single Popup -->
+
+                                        </div>
+                                        <div class="caption-bottom text-center">
+                                            <div class="info">
+                                                <h5 class="heading heading-h5"><a href="portfolio-details.html">The
+                                                        Language of
+                                                        Designs</a></h5>
+                                                <p class="bk_pra">Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-33-33 cat--2 cat--4" style="position: absolute; left: 33.2292%; top: 0px;">
+                                    <div class="portfolio with-caption">
+                                        <div class="thumb">
+                                            <a href="portfolio-details.html">
+                                                <img src="img/portfolio/grid/caption-2.jpg" alt="portfolio images">
+                                            </a>
+                                        </div>
+                                        <div class="caption-bottom text-center">
+                                            <div class="info">
+                                                <h5 class="heading heading-h5"><a href="portfolio-details.html">B-sharp
+                                                        High-end Audio</a></h5>
+                                                <p class="bk_pra">Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-33-33 cat--1 cat--3" style="position: absolute; left: 66.5625%; top: 0px;">
+                                    <div class="portfolio with-caption">
+                                        <div class="thumb">
+                                            <a href="portfolio-details.html">
+                                                <img src="img/portfolio/grid/caption-3.jpg" alt="portfolio images">
+                                            </a>
+                                        </div>
+                                        <div class="caption-bottom text-center">
+                                            <div class="info">
+                                                <h5 class="heading heading-h5"><a href="portfolio-details.html">T smart
+                                                        Sound System</a></h5>
+                                                <p class="bk_pra">Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-33-33 cat--1 cat--3 cat--4" style="position: absolute; left: 0%; top: 346px;">
+                                    <div class="portfolio with-caption">
+                                        <div class="thumb video-with-thumb">
+                                            <a href="portfolio-details.html">
+                                                <img src="img/portfolio/grid/caption-4.jpg" alt="portfolio images">
+                                            </a>
+                                            <!-- Start Single Popup -->
+                                            <div class="video-btn position--center">
+                                                <a class="play__btn" href="https://www.youtube.com/watch?v=9No-FiEInLA">
+                                                    <div class="video-icon yellow-color-2"></div>
+                                                </a>
+                                            </div>
+                                            <!-- End Single Popup -->
+                                        </div>
+                                        <div class="caption-bottom text-center">
+                                            <div class="info">
+                                                <h5 class="heading heading-h5"><a href="portfolio-details.html">Awe-inspiring
+                                                        Projects</a></h5>
+                                                <p class="bk_pra">Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-33-33 cat--2 cat--3 cat--4" style="position: absolute; left: 33.2292%; top: 346px;">
+                                    <div class="portfolio with-caption">
+                                        <div class="thumb">
+                                            <a href="portfolio-details.html">
+                                                <img src="img/portfolio/grid/caption-5.jpg" alt="portfolio images">
+                                            </a>
+                                        </div>
+                                        <div class="caption-bottom text-center">
+                                            <div class="info">
+                                                <h5 class="heading heading-h5"><a href="portfolio-details.html">Gifts
+                                                        for Photography Lovers</a></h5>
+                                                <p class="bk_pra">Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+
+                                <!-- Start Single Portfolio -->
+                                <div class="portfolio-33-33 cat--3 cat--4" style="position: absolute; left: 66.5625%; top: 346px;">
+                                    <div class="portfolio with-caption">
+                                        <div class="thumb">
+                                            <a href="portfolio-details.html">
+                                                <img src="img/portfolio/grid/caption-6.jpg" alt="portfolio images">
+                                            </a>
+                                        </div>
+                                        <div class="caption-bottom text-center">
+                                            <div class="info">
+                                                <h5 class="heading heading-h5"><a href="portfolio-details.html">Enchanting
+                                                        Portrait Hacks</a></h5>
+                                                <p class="bk_pra">Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Portfolio -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio Caption -->
+
+            <!-- Start Call To Action -->
+            <div class="brook-call-to-action bg_color--13 ptb--70 bg-as-text2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-12 col-12">
+                            <div class="call-content text-center text-md-left text-center">
+                                <h4 class="heading heading-h4 text-white">Sign up for new updates from us.</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-12">
+                            <div class="text-center text-md-right text-center mt_sm--30 mt_md--40 contact-form contact-form--4 yellow-color-2">
+                                <form action="#">
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Your e-mail">
+                                        <button>Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Call To Action -->
+        </main>
+
+      <!-- Start About Area -->
+
   </div> <!-- Footer -->
   <footer id="page-footer-wrapper" class="page-footer-wrapper page-footer bg_color--4 fixed-footer">
     <!-- Start Copyright Area -->
