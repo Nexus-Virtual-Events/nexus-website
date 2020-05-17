@@ -113,7 +113,7 @@ def receiveconnect():
 		        'name': data["name"],
 		        'last_name': data["surname"],
 		        'need':data["need"],
-		        'message':data["message"]
+		        'message':data["message"],
 		    })
 
 	return redirect('/')
@@ -128,12 +128,13 @@ def access():
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
-			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"])
+			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"], isStudent = ('2' in flask.session["user_info"]["email"]) )
 		users_ref.document(ran_gen(6)).set({
 	        'email': flask.session["user_info"]["email"],
 	        'password': "",
 	        'name': flask.session["user_info"]["name"],
-	        'school':email_to_school(flask.session["user_info"]["email"])
+	        'school':email_to_school(flask.session["user_info"]["email"]),
+	        'isStudent':('2' in flask.session["user_info"]["email"]),
 	    })
 		return redirect('/register')
 	return redirect('/')
@@ -189,7 +190,8 @@ def authenticate_with_unity():
 				return json.dumps({
 					"code":0,
 					"admin":(True if data["email"] in admins else False),
-					"name":user["name"]
+					"name":user["name"],
+					"isStudent":(user["isStudent"])
 				})
 			return json.dumps({
 				"code":403,
