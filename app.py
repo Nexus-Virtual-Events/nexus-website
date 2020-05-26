@@ -61,6 +61,7 @@ db = firestore.client()
 users_ref = db.collection('users')
 connect_ref = db.collection('connect')
 pinner_ref = db.collection('pinner_requests')
+rooms_ref = db.collection('rooms')
 
 
 app = Flask(__name__)
@@ -206,6 +207,31 @@ def authenticate_with_unity():
 	else:
 		print("method not post")
 		return "sneaky sneaky"
+
+@app.route('/change_room_count', methods = ['POST'])
+def change_room_count():
+	if request.method == "POST":
+		data = request.form
+		room = data["room"]
+		isConnecting = data["isConnecting"]
+
+		addition = -1
+		if(isConnecting == "true"):
+			addition = 1
+
+		print("new connection")
+		print(">>>" + room)
+		print(">>>>>>>>>")
+
+		room_count = gtd(rooms_ref.where("name", "==", room).stream())[0]["count"]
+		rooms_ref.document(room).set({
+			"count": room_count + addition,
+			"name":room
+		})
+		return json.dumps({
+			"code":0
+		})
+
 
 def credentials_to_dict(credentials):
     return {'token': credentials.token,
