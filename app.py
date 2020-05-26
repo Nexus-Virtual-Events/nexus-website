@@ -18,7 +18,6 @@ from firebase_admin import firestore
 import random
 
 from flask_cors import CORS
-from send_email import send_message
 
 oauth_scopes = [
 "https://www.googleapis.com/auth/userinfo.email", #gets google profile
@@ -132,7 +131,7 @@ def access():
 		user = users_ref.where('email','==', flask.session["user_info"]["email"])
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
-			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"], isStudent = ('2' in flask.session["user_info"]["email"]) )
+			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"], isStudent = ('2' in flask.session["user_info"]["email"]), password=password )
 		if(email_to_school(flask.session["user_info"]["email"]) in school_list):
 			password = ''.join(random.choice(string.digits) for _ in range(6))
 			users_ref.document(ran_gen(6)).set({
@@ -142,8 +141,7 @@ def access():
 		        'school':email_to_school(flask.session["user_info"]["email"]),
 		        'isStudent':('2' in flask.session["user_info"]["email"]),
 		    })
-			send_message(flask.session["user_info"]["email"], flask.session["user_info"]["name"], password)
-			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"], isStudent = ('2' in flask.session["user_info"]["email"]) )
+			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"], isStudent = ('2' in flask.session["user_info"]["email"]),password=password )
 		return render_template("portals/default.html")
 	return redirect('/')
 
