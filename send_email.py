@@ -22,6 +22,7 @@ def send_message(email, name, password):
 
     mail.ehlo()
     mail.starttls()
+    print(account_email)
     mail.login(account_email, account_password)
 
     msg = MIMEMultipart()
