@@ -33,6 +33,8 @@ admins=[
 	"tgachuega20@lawrenceville.org",
 ]
 
+school_list = ["lawrenceville"]
+
 
 def email_to_school(email):
     special_indexes = []
@@ -130,14 +132,17 @@ def access():
 		if(len(gtd(user.stream()))):
 			password = gtd(user.stream())[0]["password"]
 			return render_template("portals/"+email_to_school(flask.session["user_info"]["email"])+".html", user_info=flask.session["user_info"], isStudent = ('2' in flask.session["user_info"]["email"]) )
-		users_ref.document(ran_gen(6)).set({
-	        'email': flask.session["user_info"]["email"],
-	        'password': "",
-	        'name': flask.session["user_info"]["name"],
-	        'school':email_to_school(flask.session["user_info"]["email"]),
-	        'isStudent':('2' in flask.session["user_info"]["email"]),
-	    })
-		return redirect('/register')
+		if(email_to_school(flask.session["user_info"]["email"])  in school_list):
+			users_ref.document(ran_gen(6)).set({
+		        'email': flask.session["user_info"]["email"],
+		        'password': "",
+		        'name': flask.session["user_info"]["name"],
+		        'school':email_to_school(flask.session["user_info"]["email"]),
+		        'isStudent':('2' in flask.session["user_info"]["email"]),
+		    })
+			return redirect('/register')
+		else:
+			return render_template("portals/default.html")
 	return redirect('/')
 
 @app.route('/auth/google')
