@@ -237,6 +237,20 @@ def change_room_count():
 			"code":0
 		})
 
+@app.route('/get_room_counts', methods = ['GET'])
+def get_room_counts():
+	if request.method == "GET":
+		# room_count = gtd(rooms_ref.where("name", "==", room).stream())[0]["count"]
+		# rooms_ref.document(room).set({
+		# 	"count": room_count + addition,
+		# 	"name":room
+		# })
+		# print(gtd(rooms_ref.stream()))
+		gtd(rooms_ref.stream())
+		return json.dumps({
+			# "code":0,
+			"rooms":gtd(rooms_ref.stream())
+		})
 
 def credentials_to_dict(credentials):
     return {'token': credentials.token,
@@ -278,5 +292,6 @@ def logout():
     return redirect('/access')
 
 if __name__ == "__main__":
+
 	app.config['SESSION_TYPE'] = 'filesystem'
 	app.run()
