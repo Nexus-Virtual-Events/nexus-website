@@ -218,19 +218,19 @@ def change_room_count():
 	if request.method == "POST":
 		data = request.form
 		room = data["room"]
-		count = data["count"]
+		isConnecting = data["isConnecting"]
 
-		# addition = -1
-		# if(isConnecting == "true"):
-		# 	addition = 1
+		addition = -1
+		if(isConnecting == "true"):
+			addition = 1
 
-		# print("new connection")
-		# print(">>>" + room)
-		# print(">>>>>>>>>")
+		print("new connection")
+		print(">>>" + room)
+		print(">>>>>>>>>")
 
 		room_count = gtd(rooms_ref.where("name", "==", room).stream())[0]["count"]
 		rooms_ref.document(room).set({
-			"count": count,
+			"count": room_count + addition,
 			"name":room
 		})
 		return json.dumps({
