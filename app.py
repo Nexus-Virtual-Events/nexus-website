@@ -219,6 +219,10 @@ def change_room_count():
 		data = request.form
 		room = data["room"]
 		count = data["count"]
+		print("The number of people has been changed to")
+		print(">>>>")
+		print(count)
+		print(">>>>")
 
 		# addition = -1
 		# if(isConnecting == "true"):
@@ -292,6 +296,7 @@ def logout():
     return redirect('/access')
 
 if __name__ == "__main__":
+		# print(gtd(rooms_ref.stream()))
 
 	app.config['SESSION_TYPE'] = 'filesystem'
 	app.run()
