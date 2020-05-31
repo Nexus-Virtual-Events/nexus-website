@@ -228,9 +228,9 @@ def change_room_count():
 		print(">>>" + room)
 		print(">>>>>>>>>")
 
-		room_count = gtd(rooms_ref.where("name", "==", room).stream())[0]["count"]
+		# room_count = gtd(rooms_ref.where("name", "==", room).stream())[0]["count"]
 		rooms_ref.document(room).set({
-			"count": room_count + addition,
+			"count":count,
 			"name":room
 		})
 		return json.dumps({
