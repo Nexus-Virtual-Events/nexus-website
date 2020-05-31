@@ -224,10 +224,6 @@ def change_room_count():
 		print(count)
 		print(">>>>")
 
-		addition = -1
-		if(isConnecting == "true"):
-			addition = 1
-
 		print("new connection")
 		print(">>>" + room)
 		print(">>>>>>>>>")
