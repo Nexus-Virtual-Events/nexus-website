@@ -40,4 +40,4 @@ six==1.14.0
 soupsieve==2.0
 uritemplate==3.0.1
 urllib3==1.25.9
-Werkzeug==0.15.2
+Werkzeug==0.15.3
